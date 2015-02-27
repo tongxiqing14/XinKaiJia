@@ -1,0 +1,154 @@
+.html-body-overflow{
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
+#hero_purple_symbol
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 250px;
+    top: 40px;
+}
+
+#hero_purple1
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 260px;
+    top: 40px;
+}
+
+#hero_purple2
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 270px;
+    top: 40px;
+}
+
+#hero_purple3
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 280px;
+    top: 40px;
+}
+
+#hero_purple4
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 290px;
+    top: 40px;
+}
+
+#div_hero_blue_symbol_num_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 350px;
+    top: 40px;
+}
+
+#div_hero_blue1_num_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 360px;
+    top: 40px;
+}
+
+#div_hero_blue2_num_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 370px;
+    top: 40px;
+}
+
+#div_hero_blue3_num_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 380px;
+    top: 40px;
+}
+
+#div_hero_blue4_num_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 390px;
+    top: 40px;
+}
+
+#div_hero_green_symbol_num_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 350px;
+    top: 140px;
+}
+
+#div_hero_green1_num_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 360px;
+    top: 140px;
+}
+
+#div_hero_green2_num_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 370px;
+    top: 140px;
+}
+
+#div_hero_green3_num_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 380px;
+    top: 140px;
+}
+
+#div_hero_green4_num_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 390px;
+    top: 140px;
+}

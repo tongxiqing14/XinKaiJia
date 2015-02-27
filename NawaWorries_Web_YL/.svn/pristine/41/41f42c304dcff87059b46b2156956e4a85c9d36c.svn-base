@@ -1,0 +1,300 @@
+#div_generalbar_01_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 40px;
+    top: 460px;
+}
+
+#div_generalbar_03_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 150px;
+    top: 460px;
+}
+
+#div_generalbar_05_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 420px;
+    top: 460px;
+}
+
+#div_generalbar_07_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 530px;
+    top: 460px;
+}
+
+#div_backpack_03_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 335px;
+    top: 70px;
+}
+
+/*#div_backpack_04_id*/
+/*{*/
+    /*position:absolute;*/
+    /*width:200px;*/
+    /*height:115px;*/
+    /*z-index:1;*/
+    /*left: 440px;*/
+    /*top: -70px;*/
+/*}*/
+
+
+#div_armer_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 340px;
+    top: 120px;
+}
+
+#div_body_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 430px;
+    top: 120px;
+}
+
+#div_feet_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 520px;
+    top: 120px;
+}
+
+#div_hand_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 340px;
+    top: 230px;
+}
+
+#div_head_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 430px;
+    top: 230px;
+}
+
+#div_ring_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 520px;
+    top: 230px;
+}
+
+#div_rock_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 340px;
+    top: 330px;
+}
+
+#div_shied_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 430px;
+    top: 330px;
+}
+
+#div_tui_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 520px;
+    top: 330px;
+}
+
+#div_skill_id1
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 330px;
+    top: -120px;
+}
+
+#div_buy_id1
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 510px;
+    top: -150px;
+}
+
+#div_skill_id2
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 330px;
+    top: -190px;
+}
+
+#div_buy_id2
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 510px;
+    top: -210px;
+}
+
+#div_skill_id3
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 330px;
+    top: -260px;
+}
+
+#div_buy_id3
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 510px;
+    top: -290px;
+}
+
+#div_skill_id4
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 330px;
+    top: -330px;
+}
+
+#div_buy_id4
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 510px;
+    top: -360px;
+}
+
+#div_warriors_id1
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 110px;
+    top: 90px;
+}
+
+#div_hero_green_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 100px;
+    top: 190px;
+}
+
+#div_shen_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 120px;
+    top: 370px;
+}
+
+#div3
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 10px;
+    top: 220px;
+}
+
+#div_backpack_03_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 335px;
+    top: 70px;
+}
+
+#div_backpack_04_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 440px;
+    top: 70px;
+}
+
+#div_ren_wu_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 120px;
+    top: 210px;
+}

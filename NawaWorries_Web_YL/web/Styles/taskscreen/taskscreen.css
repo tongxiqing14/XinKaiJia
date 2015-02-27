@@ -1,0 +1,124 @@
+.html-body-overflow{
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
+#div2
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 40px;
+    top: 60px;
+}
+
+#div3
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 475px;
+    top: 70px;
+}
+
+#div4
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 40px;
+    top: 125px;
+}
+
+#div5
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 475px;
+    top: 135px;
+}
+
+#div6
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 40px;
+    top: 190px;
+}
+
+#div7
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 475px;
+    top: 200px;
+}
+
+#div8
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 40px;
+    top: 255px;
+}
+
+#div9
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 475px;
+    top: 265px;
+}
+
+#div10
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 40px;
+    top: 320px;
+}
+
+#div11
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 475px;
+    top: 330px;
+}
+
+#div12
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 40px;
+    top: 385px;
+}
+
+#div13
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 475px;
+    top: 395px;
+}

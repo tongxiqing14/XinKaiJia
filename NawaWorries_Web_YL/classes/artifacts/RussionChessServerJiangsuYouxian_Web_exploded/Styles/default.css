@@ -1,0 +1,110 @@
+body
+{
+    background-repeat: no-repeat;
+    margin: 0px;
+    background-color:#000000;
+}
+#ErrorInfoDiv
+{
+    position: absolute;
+    top: 430px;
+    left: 0px;
+    width: 100%;
+    background-color: #FBCA16;
+    color: #EC008C;
+    height: 0px;
+    vertical-align: middle;
+    text-align: center;
+}
+form
+{
+    margin: 0;
+}
+a:visited
+{
+    text-decoration: none;
+    color: #191b61;
+}
+a:hover
+{
+    text-decoration: none;
+    color: #191b61;
+}
+a:link
+{
+    text-decoration: none;
+    color: #191b61;
+}
+#divTask
+{
+    position: absolute;
+    left: 17px;
+    top: 390px;
+    z-index: 2;
+}
+img
+{
+    border:0px;
+}
+
+#DivMain {
+    position:absolute;
+    left:0px;
+    top:2px;
+    width:640px;
+    height:524px;
+    z-index:1;
+}
+
+.shopPlant
+{
+    position:absolute;
+    width:75px;
+    height:75px;
+}
+.shop
+{
+    position:absolute;
+    font-weight: bold;
+    font-size: 20px;
+    color:#ffffff;
+}
+.shopLevel
+{
+    position:absolute;
+    top:-24px;
+    left:19px;
+}
+
+.shopMoney
+{
+    position:absolute;
+    top:99px;
+    left:18px;
+    color:Red;
+}
+
+.shopBuy
+{
+    position:absolute;
+    top:129px;
+    left:2px;
+}
+
+.Plantblood
+{
+    position:absolute;
+    top:0px;
+}
+
+.PlantAttack
+{
+    position:absolute;
+    top:32px;
+
+}
+.PlantDefend
+{
+    position:absolute;
+    top:63px;
+}

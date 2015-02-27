@@ -1,0 +1,39 @@
+#div_generalbar_01_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 40px;
+    top: 460px;
+}
+
+#div_generalbar_03_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 150px;
+    top: 460px;
+}
+
+#div_generalbar_05_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 420px;
+    top: 460px;
+}
+
+#div_generalbar_07_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 530px;
+    top: 460px;
+}

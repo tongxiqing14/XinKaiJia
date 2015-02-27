@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee   http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <context-param>
+        <param-name>ServerURL</param-name>
+        <param-value>http://192.168.241.102/Platform3CPHttpService/HttpService/</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>IsButtonOnOK</param-name>
+        <param-value>false</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>IsActiveOnOK</param-name>
+        <param-value>true</param-value>
+    </context-param>
+
+    <!--未实现-->
+    <context-param>
+        <param-name>IsAutoTopUp</param-name>
+        <param-value>true</param-value>
+    </context-param>
+
+    <!--未实现-->
+    <context-param>
+        <param-name>IsMusicOn</param-name>
+        <param-value>true</param-value>
+    </context-param>
+
+    <session-config>
+        <session-timeout>360</session-timeout>
+    </session-config>
+
+    <listener>
+        <listener-class>common.MySessionListener</listener-class>
+    </listener>
+
+    <servlet>
+        <servlet-name>Servlet1</servlet-name>
+        <servlet-class>salary.ServletSalary</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet1</servlet-name>
+        <url-pattern>/HttpService/FishFeiFei.ashx</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BalanceServlet</servlet-name>
+        <servlet-class>salary.BalanceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BalanceServlet</servlet-name>
+        <url-pattern>/HttpService/BalanceSupport.ashx</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ConsumeServlet</servlet-name>
+        <servlet-class>salary.ConsumeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ConsumeServlet</servlet-name>
+        <url-pattern>/HttpService/topupAndConsume.ashx</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HeroServlet</servlet-name>
+        <servlet-class>salary.HeroServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HeroServlet</servlet-name>
+        <url-pattern>/HttpService/hero.ashx</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StageToTeamServlet</servlet-name>
+        <servlet-class>transitServlet.StageToTeamServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StageToTeamServlet</servlet-name>
+        <url-pattern>/HttpService/StageToTeam.ashx</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TeamToGameServlet</servlet-name>
+        <servlet-class>transitServlet.TeamToGameServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TeamToGameServlet</servlet-name>
+        <url-pattern>/HttpService/TeamToGame.ashx</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TeamToTeamServlet</servlet-name>
+        <servlet-class>transitServlet.TeamToTeamServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TeamToTeamServlet</servlet-name>
+        <url-pattern>/HttpService/TeamToTeam.ashx</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Hero2MainAction</servlet-name>
+        <servlet-class>transitServlet.Hero2MainAction</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Hero2MainAction</servlet-name>
+        <url-pattern>/HttpService/Hero2MainAction.ashx</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Game2GameAction</servlet-name>
+        <servlet-class>transitServlet.GameToGameServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Game2GameAction</servlet-name>
+        <url-pattern>/HttpService/Game2GameAction.ashx</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Armorbases2ArmorbasesServlet</servlet-name>
+        <servlet-class>transitServlet.Armorbases2ArmorbasesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Armorbases2ArmorbasesServlet</servlet-name>
+        <url-pattern>/HttpService/Armorbases2ArmorbasesAction.ashx</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Backpack2BackpackAction</servlet-name>
+        <servlet-class>transitServlet.Backpack2BackpackAction</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Backpack2BackpackAction</servlet-name>
+        <url-pattern>/HttpService/Backpack2BackpackAction.ashx</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Stage2StageAction</servlet-name>
+        <servlet-class>transitServlet.Stage2StageAction</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Stage2StageAction</servlet-name>
+        <url-pattern>/HttpService/Stage2StageAction.ashx</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>verificationAction</servlet-name>
+        <servlet-class>salary.VerificationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>verificationAction</servlet-name>
+        <url-pattern>/HttpService/verification.ashx</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>the9inputAction</servlet-name>
+        <servlet-class>salary.The9InputScreenServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>the9inputAction</servlet-name>
+        <url-pattern>/HttpService/the9input.ashx</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StageInfoUpdateAction</servlet-name>
+        <servlet-class>salary.StageInfoUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StageInfoUpdateAction</servlet-name>
+        <url-pattern>/HttpService/StageInfoUpdateAction.ashx</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RankServlet</servlet-name>
+        <servlet-class>salary.RankServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RankServlet</servlet-name>
+        <url-pattern>/HttpService/RankAction.ashx</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Hero2HeroAction</servlet-name>
+        <servlet-class>transitServlet.Hero2HeroAction</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Hero2HeroAction</servlet-name>
+        <url-pattern>/HttpService/Hero2HeroAction.ashx</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>IsGotAction</servlet-name>
+        <servlet-class>transitServlet.IsGotAction</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IsGotAction</servlet-name>
+        <url-pattern>/HttpService/IsGotAction.ashx</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>web$services</servlet-name>
+        <servlet-class>web_services.GameInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>web$services</servlet-name>
+        <url-pattern>/HttpService/GameInfoServlet.ashx</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <login-config>
+        <auth-method>BASIC</auth-method>
+    </login-config>
+</web-app>

@@ -1,0 +1,809 @@
+#anger0
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 70px;
+    top: 370px;
+}
+
+#anger1
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 170px;
+    top: 370px;
+}
+
+#anger2
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 270px;
+    top: 370px;
+}
+
+#anger3
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 370px;
+    top: 370px;
+}
+
+#anger4
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 470px;
+    top: 370px;
+}
+
+#anger5
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 490px;
+    top: 370px;
+}
+
+#anger6
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 495px;
+    top: 370px;
+}
+
+#bottom_02
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 0px;
+    top: 490px;
+}
+
+#title-2_13_1
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 430px;
+    top: 20px;
+}
+
+#title-2_13_2
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 530px;
+    top: 20px;
+}
+
+#jewelry-2_05
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 490px;
+    top: 20px;
+}
+
+#number04Img
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 490px;
+    top: 20px;
+}
+
+#chest-2_07
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 590px;
+    top: 20px;
+}
+
+#pet11Img
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 50px;
+    top: 150px;
+}
+
+#pet21Img
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 120px;
+    top: 200px;
+}
+
+#pet31Img
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 190px;
+    top: 190px;
+}
+
+/*#div_pet_id01*/
+/*{*/
+    /*position:absolute;*/
+    /*width:200px;*/
+    /*height:115px;*/
+    /*z-index:1;*/
+    /*left: 70px;*/
+    /*top: 70px;*/
+/*}*/
+
+/*#div_pet_id02*/
+/*{*/
+    /*position:absolute;*/
+    /*width:200px;*/
+    /*height:115px;*/
+    /*z-index:1;*/
+    /*left: 70px;*/
+    /*top: 170px;*/
+/*}*/
+
+#dazhao2Img
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 120px;
+    top: 200px;
+}
+
+#dazhao21Img
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 120px;
+    top: 200px;
+}
+
+#dazhao22Img
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 120px;
+    top: 200px;
+}
+
+#dazhao23Img
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 120px;
+    top: 200px;
+}
+
+#stormImg
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 190px;
+    top: 190px;
+}
+
+#storm1Img
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 190px;
+    top: 190px;
+}
+
+#storm2Img
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 190px;
+    top: 190px;
+}
+
+#iceImg
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 280px;
+    top: 180px;
+}
+
+#bulletImg
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 550px;
+    top: 200px;
+}
+
+#fireball_Img
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 10px;
+    top: 200px;
+}
+
+#anger_line0
+{
+    position:absolute;
+    /*width:0px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 68px;
+    top: 460px;
+}
+
+#hp_line0
+{
+    position:absolute;
+    width:200px;
+    height:115px;
+    z-index:1;
+    left: 68px;
+    top: 472px;
+}
+
+#anger_line1
+{
+    position:absolute;
+    width:200px;
+    height:115px;
+    z-index:1;
+    left: 168px;
+    top: 460px;
+}
+
+#hp_line1
+{
+    position:absolute;
+    width:200px;
+    height:115px;
+    z-index:1;
+    left: 168px;
+    top: 472px;
+}
+
+#anger_line2
+{
+    position:absolute;
+    width:200px;
+    height:115px;
+    z-index:1;
+    left: 268px;
+    top: 460px;
+}
+
+#hp_line2
+{
+    position:absolute;
+    width:200px;
+    height:115px;
+    z-index:1;
+    left: 268px;
+    top: 472px;
+}
+
+#anger_line3
+{
+    position:absolute;
+    width:200px;
+    height:115px;
+    z-index:1;
+    left: 368px;
+    top: 460px;
+}
+
+#hp_line3
+{
+    position:absolute;
+    width:200px;
+    height:115px;
+    z-index:1;
+    left: 368px;
+    top: 472px;
+}
+
+#anger_line4
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 468px;
+    top: 460px;
+}
+
+#hp_line4
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 468px;
+    top: 472px;
+}
+
+#spineImg0
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 468px;
+    top: 150px;
+}
+
+#eff_point_Coco_atkImg
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 468px;
+    top: 150px;
+}
+
+#hero_purple
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 248px;
+    top: 150px;
+}
+
+#hero_purple_symbol
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 250px;
+    top: 40px;
+}
+
+#hero_purple1
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 260px;
+    top: 40px;
+}
+
+#hero_purple2
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 270px;
+    top: 40px;
+}
+
+#hero_purple3
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 280px;
+    top: 40px;
+}
+
+#hero_purple4
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 290px;
+    top: 40px;
+}
+
+
+/*#div_hero_id*/
+/*{*/
+    /*position:absolute;*/
+    /*width:200px;*/
+    /*height:115px;*/
+    /*z-index:1;*/
+    /*left: 248px;*/
+    /*top: 50px;*/
+/*}*/
+
+#hero_blue_symbol
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 250px;
+    top: 50px;
+}
+
+#hero_blue1
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 260px;
+    top: 50px;
+}
+
+#hero_blue2
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 270px;
+    top: 50px;
+}
+
+#hero_blue3
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 280px;
+    top: 50px;
+}
+
+#hero_blue4
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 290px;
+    top: 50px;
+}
+
+#hero_green
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 148px;
+    top: 150px;
+}
+
+#hero_green_symbol
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 250px;
+    top: 70px;
+}
+
+#hero_green1
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 260px;
+    top: 70px;
+}
+
+#hero_green2
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 270px;
+    top: 70px;
+}
+
+#hero_green3
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 280px;
+    top: 70px;
+}
+
+#hero_green4
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 290px;
+    top: 70px;
+}
+
+#hero_red
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 148px;
+    top: 50px;
+}
+
+#hero_red_symbol
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 250px;
+    top: 60px;
+}
+
+#hero_red1
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 260px;
+    top: 60px;
+}
+
+#hero_red2
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 270px;
+    top: 60px;
+}
+
+#hero_red3
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 280px;
+    top: 60px;
+}
+
+#hero_red4
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 290px;
+    top: 60px;
+}
+
+#shadow0
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 300px;
+    top: 300px;
+}
+
+#shadow1
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 200px;
+    top: 185px;
+}
+
+#pets1_right_horse
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 480px;
+    top: 185px;
+}
+
+#pets1_right_frogfish
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 500px;
+    top: 255px;
+}
+
+#pets1_right_bird
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 500px;
+    top: 185px;
+}
+
+/*#div_follow_id01*/
+/*{*/
+    /*position:absolute;*/
+    /*width:200px;*/
+    /*height:115px;*/
+    /*z-index:1;*/
+    /*left: 120px;*/
+    /*top: 150px;*/
+/*}*/
+
+/*#div_follow_id02*/
+/*{*/
+    /*position:absolute;*/
+    /*width:200px;*/
+    /*height:115px;*/
+    /*z-index:1;*/
+    /*left: 120px;*/
+    /*top: 150px;*/
+/*}*/
+
+#chain_spikeImg0
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 348px;
+    top: 150px;
+}
+
+/*#eff_point_Coco_atkImg*/
+/*{*/
+/*position:absolute;*/
+/*width:200px;*/
+/*height:115px;*/
+/*z-index:1;*/
+/*left: 348px;*/
+/*top: 150px;*/
+/*}*/
+
+#div_pet0075_head_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 75px;
+    top: 380px;
+}
+
+#div_pet0078_head_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 175px;
+    top: 380px;
+}
+
+#div_pet0082_head_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 275px;
+    top: 380px;
+}
+
+#div_pet0088_head_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 375px;
+    top: 380px;
+}
+
+#div_pet0091_head_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 475px;
+    top: 380px;
+}
+
+#div_autocombat_off_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 555px;
+    top: 375px;
+}
+
+#div_autocombat_on_id
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 55px;
+    top: 15px;
+}
+#timer
+{
+    position:absolute;
+    /*width:200px;*/
+    /*height:115px;*/
+    z-index:1;
+    left: 100px;
+    top: 30px;
+}
