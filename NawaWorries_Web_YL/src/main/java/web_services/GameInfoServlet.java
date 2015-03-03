@@ -46,6 +46,7 @@ public class GameInfoServlet extends HttpServlet {
 
         double sum_enemy_hp_num = 0;
         double sum_hero_hp_num = 0;
+        double sum_hero_fight_num = 0;
 
         /**获取敌方成员*/
         List<EnemyTeam> enemyTeamList =
@@ -107,10 +108,14 @@ public class GameInfoServlet extends HttpServlet {
 
         for(int h = 0; h < monsterList_in_heroList.size(); h++){
             sum_hero_hp_num += monsterList_in_heroList.get(h).getHp_num();
+            sum_hero_fight_num += monsterList_in_heroList.get(h).getFight_num();
         }
 
 //        String return__ =  "5{id:"+enemyTeamStr+",Result:0}";
-        String return__ =  "{id:"+Integer.valueOf((String)session1.getAttribute("_JewelScore"))+",chestnum:"+Integer.valueOf((String)session1.getAttribute("_ChestNum"))+",enemyhp:"+sum_enemy_hp_num+",herohp:"+sum_hero_hp_num+",Result:0}";
+        String return__ =  "{id:"+Integer.valueOf((String)session1.getAttribute("_JewelScore"))
+                +",chestnum:"+Integer.valueOf((String)session1.getAttribute("_ChestNum"))
+                +",enemyhp:"+sum_enemy_hp_num+",herohp:"+sum_hero_hp_num+",fighthp:"
+                +sum_hero_fight_num+",Result:0}";
 
         System.out.println(return__);
 
