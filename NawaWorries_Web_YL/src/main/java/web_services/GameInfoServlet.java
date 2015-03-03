@@ -5,7 +5,6 @@ import beans.FighterItemBean;
 import com.fancyy.json.util.JSON;
 import common.MySessionContext;
 import elements.EnemyTeam;
-import service.InfoTransition;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
@@ -49,13 +48,8 @@ public class GameInfoServlet extends HttpServlet {
         double sum_hero_hp_num = 0;
 
         /**获取敌方成员*/
-        List<EnemyTeam> enemyTeamList = new ArrayList<EnemyTeam>();
-
-        Integer selected_stage= Integer.valueOf((String) session1.getAttribute("selected_stage"));
-
-        if(req.getSession().getAttribute("enemy_team")!=null){
-            enemyTeamList = (List<EnemyTeam>) JSON.toObject(InfoTransition.setEnemyTeam(selected_stage), EnemyTeam.class);
-        }
+        List<EnemyTeam> enemyTeamList =
+                (List<EnemyTeam>) JSON.toObject((String) session1.getAttribute("enemy_team"), EnemyTeam.class);
 
         for(int h = 0; h < enemyTeamList.size(); h++){
             sum_enemy_hp_num += enemyTeamList.get(h).getHpNumber();
