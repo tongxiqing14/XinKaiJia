@@ -114,7 +114,7 @@ public class GameInfoServlet extends HttpServlet {
 //        String return__ =  "5{id:"+enemyTeamStr+",Result:0}";
         String return__ =  "{id:"+Integer.valueOf((String)session1.getAttribute("_JewelScore"))
                 +",chestnum:"+Integer.valueOf((String)session1.getAttribute("_ChestNum"))
-                +",enemyhp:"+sum_enemy_hp_num+",herohp:"+sum_hero_hp_num+",fighthp:"
+                +",enemyhp:"+sum_enemy_hp_num+",herohp:"+sum_hero_hp_num+",fightnum:"
                 +sum_hero_fight_num+",Result:0}";
 
         System.out.println(return__);
