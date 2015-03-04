@@ -393,7 +393,7 @@ function run(){
         <%}
     }%>
 
-    <%if(herolist_in_selectHerolist !=null&&herolist_in_selectHerolist .size()==1){%>
+    <%if(herolist_in_selectHerolist !=null&&herolist_in_selectHerolist.size()==1){%>
             hero_blue_action(<%=properties.getProperty("titleItem"+herolist_in_selectHerolist .get(0).getFighter_id())%>);
     <%}%>
 }

@@ -39,7 +39,7 @@
 
     /**筛选已购买 hero list*/
     List<FighterBean> getHeroList = new ArrayList<FighterBean>();
-    for(FighterBean heroItem : heroList){   /**显示全部伙伴*/
+    for(FighterBean heroItem : heroList){   /**显示全部伙伴 heroList==getHeroList*/
 //       if(heroItem.isGot_flag())
            getHeroList.add(heroItem);
     }
