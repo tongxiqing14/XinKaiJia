@@ -47,9 +47,6 @@ public class StageInfoServlet extends HttpServlet {
         /**取得Application对象*/
         ServletContext application=this.getServletContext();
 
-        /**取得session属性*/
-        httpSession = req.getSession();
-
         /**获取 hero list*/
         List<FighterBean> heroList = (List<FighterBean>) httpSession.getAttribute("_FighterData");
 
