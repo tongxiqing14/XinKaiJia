@@ -21,8 +21,8 @@
     String IsActiveOnOK = application.getInitParameter("IsActiveOnOK");
     String ImageURL = application.getInitParameter("ImageURL");
 
-    String[] jadNames = {"CP901001/FishFeiFei.jad","CP901001/XinKaiJia2.jad"};
-    String[] jarNames = {"CP901001/FishFeiFei.jar","CP901001/XinKaiJia2.jar"};
+    String[] jadNames = {"CP901001/FishFeiFei.jad","CP901001/XinKaiJia2.jad","CP901001/XinKaiJia3.jad"};
+    String[] jarNames = {"CP901001/FishFeiFei.jar","CP901001/XinKaiJia2.jar","CP901001/XinKaiJia3.jar"};
 
 
     if(UserID==null||UserID.equals("")){
