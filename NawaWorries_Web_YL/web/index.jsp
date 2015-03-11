@@ -340,7 +340,7 @@
 
 <body onload="run()" style="background-Repeat:no-repeat" width="640" height="530">
 
-<div id="test_div" style="z-index: 5;font-size:20px;font-weight: bold;position: absolute; top: 65px; left: 80px;color: #ffffff;"><%=session.getId()%></div>
+<%--<div id="test_div" style="z-index: 5;font-size:20px;font-weight: bold;position: absolute; top: 65px; left: 80px;color: #ffffff;"><%=session.getId()%></div>--%>
 
 <div id="div1" style='position: absolute;left: -2px;'>
     <img id="id00" src="menu/menu.jpg" style="position:absolute; left:0px; top:0px; z-index:1"/>
