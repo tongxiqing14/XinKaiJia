@@ -136,6 +136,7 @@
         <param name="ImageURL" value="<%=ImageURL%>" />
         <param name="enemyTeamStr" value="<%=sum_enemy_hp_num%>" />
         <param name="sessionId" value="<%=session.getId()%>" />
+        <param name="selected_stage" value="<%=selected_stage%>" />
         <param name="game_info_url" value="<%=host%>/HttpService/GameInfoServlet.ashx" />
         <param name="return_url" value="<%=host%>" />
     </object>
