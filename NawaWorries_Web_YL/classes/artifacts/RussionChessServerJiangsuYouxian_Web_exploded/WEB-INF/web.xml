@@ -173,6 +173,15 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>StageInfoServlet</servlet-name>
+        <servlet-class>web_services.StageInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StageInfoServlet</servlet-name>
+        <url-pattern>/HttpService/StageInfoServlet.ashx</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>RankServlet</servlet-name>
         <servlet-class>salary.RankServlet</servlet-class>
     </servlet>
