@@ -182,6 +182,15 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>StageEnemyServlet</servlet-name>
+        <servlet-class>web_services.StageEnemyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StageEnemyServlet</servlet-name>
+        <url-pattern>/HttpService/StageEnemyServlet.ashx</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>RankServlet</servlet-name>
         <servlet-class>salary.RankServlet</servlet-class>
     </servlet>
