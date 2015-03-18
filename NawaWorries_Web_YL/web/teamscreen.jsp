@@ -156,7 +156,7 @@
                         if (xmlhttp.readyState == 4) {
                             var js = eval(xmlhttp.responseText);
                             if(js[0].id == 0){
-                                window.location.href = "team2game.jsp?selectIndex="+selectIndex;
+                                window.location.href = "gamescreen.jsp?selectIndex="+selectIndex;
                             }else{
 
                             }
@@ -249,7 +249,7 @@
                                         if (xmlhttp.readyState == 4) {
                                             var js = eval(xmlhttp.responseText);
                                             if(js[0].id == 0){
-                                                window.location.href = "team2game.jsp?selectIndex="+selectIndex;
+                                                window.location.href = "gamescreen.jsp?selectIndex="+selectIndex;
                                             }else{
 
                                             }
