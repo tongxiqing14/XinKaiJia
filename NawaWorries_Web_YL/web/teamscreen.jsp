@@ -158,7 +158,7 @@
                         if (xmlhttp.readyState == 4) {
                             var js = eval(xmlhttp.responseText);
                             if(js[0].id == 0){
-                                window.location.href = "teamscreen.jsp?select_Index=-1";
+                                window.location.href = "teamscreen.jsp?select_Index=0&select_Index_=-1";
                             }else{
 
                             }
@@ -251,7 +251,7 @@
                                         if (xmlhttp.readyState == 4) {
                                             var js = eval(xmlhttp.responseText);
                                             if(js[0].id == 0){
-                                                window.location.href = "teamscreen.jsp?select_Index=-1";
+                                                window.location.href = "teamscreen.jsp?select_Index=0&select_Index_=-1";
                                             }else{
 
                                             }
@@ -693,9 +693,14 @@
         for(int h = 0; h < enemyTeamList.size(); h++){
             sum_enemy_hp_num = enemyTeamList.get(h).getHpNumber();
         }
+
+        int select_Index_ = 0;
+        if(request.getParameter("select_Index_")!=null){
+            select_Index_ = Integer.valueOf(request.getParameter("select_Index_"));
+        }
     %>
 
-     <%if(select_Index == -1){%>
+     <%if(select_Index_ == -1){%>
 
         <div style="position:absolute; left:0px; top:0px; width:640px; height:526px; z-index:1">
             <!--<object id="j2meapp" classid="clsid:72E6F181-D1B0-4C22-B0D7-4A0740EEAEF5" width="640" height="530">-->
