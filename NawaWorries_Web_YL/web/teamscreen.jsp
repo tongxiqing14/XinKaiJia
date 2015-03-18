@@ -15,6 +15,8 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
+    String followingPage = session.getAttribute("followingPage")!=null ? (String) session.getAttribute("followingPage") : null;
+
     session.removeAttribute("followingPage");
 
     String servletPath = request.getServletPath();
@@ -467,33 +469,42 @@
         }
 
         function run(){
-//            mouse();
-            document.getElementById("img_select_id").src = "team/select.png";
-            document.getElementById("div_select_id").style.left = '70px';
-            document.getElementById("div_select_id").style.top = '100px';
 
-            if(selectIndex == 0){
-                document.getElementById("img_team_id1").src = "team/front.png";
-                document.getElementById("div_command").innerHTML = '<br>请选择一位铠甲勇士参战   <font size="4px" color="#ff2c50">【按5键快速进入游戏】</font>';
-            }else if(selectIndex == 1){
-                document.getElementById("img_team_id2").src = "team/middle.png";
-                document.getElementById("div_command").innerHTML = '<br>请选择一到两位随从参战   <font size="4px" color="#ff2c50">【按5键快速进入游戏】</font>';
-            }else if(selectIndex == 2){
-                document.getElementById("img_team_id3").src = "team/behind.png";
-                document.getElementById("div_command").innerHTML = '<br>请选择一到两位宠物参战   <font size="4px" color="#ff2c50">【按5键快速进入游戏】</font>';
-            }else if(selectIndex == 3){
-                document.getElementById("img_team_id4").src = "team/fight.png";
-            }
+            if("<%=(followingPage == null)%>" == "true"){
+                /**根据选择变化关卡背景*/
 
-            if(select_title_horizontal_Index==5){
-                document.getElementById("div_select_id").style.left = -70;
-                document.getElementById("div_select_id").style.top = -80;
+                document.getElementById("img_select_id").src = "team/select.png";
+                document.getElementById("div_select_id").style.left = '70px';
+                document.getElementById("div_select_id").style.top = '100px';
+
+                if(selectIndex == 0){
+                    document.getElementById("img_team_id1").src = "team/front.png";
+                    document.getElementById("div_command").innerHTML = '<br>请选择一位铠甲勇士参战   <font size="4px" color="#ff2c50">【按5键快速进入游戏】</font>';
+                }else if(selectIndex == 1){
+                    document.getElementById("img_team_id2").src = "team/middle.png";
+                    document.getElementById("div_command").innerHTML = '<br>请选择一到两位随从参战   <font size="4px" color="#ff2c50">【按5键快速进入游戏】</font>';
+                }else if(selectIndex == 2){
+                    document.getElementById("img_team_id3").src = "team/behind.png";
+                    document.getElementById("div_command").innerHTML = '<br>请选择一到两位宠物参战   <font size="4px" color="#ff2c50">【按5键快速进入游戏】</font>';
+                }else if(selectIndex == 3){
+                    document.getElementById("img_team_id4").src = "team/fight.png";
+                }
+
+                if(select_title_horizontal_Index==5){
+                    document.getElementById("div_select_id").style.left = -70;
+                    document.getElementById("div_select_id").style.top = -80;
+                }else{
+                    document.getElementById("div_select_id").style.left = 70+select_title_horizontal_Index*80;
+                    document.getElementById("div_select_id").style.top = 100+select_title_vertical_Index*80;
+                    document.div_mouse_left_x = 70+select_title_horizontal_Index*80;
+                    document.div_mouse_top_y = 100+select_title_vertical_Index*80;
+                }
             }else{
-                document.getElementById("div_select_id").style.left = 70+select_title_horizontal_Index*80;
-                document.getElementById("div_select_id").style.top = 100+select_title_vertical_Index*80;
-                document.div_mouse_left_x = 70+select_title_horizontal_Index*80;
-                document.div_mouse_top_y = 100+select_title_vertical_Index*80;
+                /**从jar返回到jsp界面*/
+
+                window.location.href = "<%=followingPage%>";
             }
+
         }
 
         function ajax_send(url,src){
