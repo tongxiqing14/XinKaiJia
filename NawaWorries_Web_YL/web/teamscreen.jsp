@@ -3,6 +3,8 @@
 <%@ page import="java.util.Properties" %>
 <%@ page import="common.PropertiesOp" %>
 <%@ page import="beans.FighterBean" %>
+<%@ page import="elements.EnemyTeam" %>
+<%@ page import="com.fancyy.json.util.JSON" %>
 <%--<%@include file="topuphtmls/confirm.jsp"%>--%>
 <%--
   Created by IntelliJ IDEA.
@@ -156,7 +158,7 @@
                         if (xmlhttp.readyState == 4) {
                             var js = eval(xmlhttp.responseText);
                             if(js[0].id == 0){
-                                window.location.href = "gamescreen.jsp?selectIndex="+selectIndex;
+                                window.location.href = "teamscreen.jsp?select_Index=-1";
                             }else{
 
                             }
@@ -249,7 +251,7 @@
                                         if (xmlhttp.readyState == 4) {
                                             var js = eval(xmlhttp.responseText);
                                             if(js[0].id == 0){
-                                                window.location.href = "gamescreen.jsp?selectIndex="+selectIndex;
+                                                window.location.href = "teamscreen.jsp?select_Index=-1";
                                             }else{
 
                                             }
@@ -662,5 +664,63 @@
 <a>
     <img id="NewStory10" src="touming.png" width="194" height="65" />
 </a>
+
+    <%
+        String[] jadNames = {"CP901001/XinKaiJia1.jad","CP901001/XinKaiJia2.jad","CP901001/XinKaiJia3.jad",
+                "CP901001/XinKaiJia4.jad","CP901001/XinKaiJia5.jad"};
+        String[] jarNames = {"CP901001/XinKaiJia1.jar","CP901001/XinKaiJia2.jar","CP901001/XinKaiJia3.jar",
+                "CP901001/XinKaiJia4.jar","CP901001/XinKaiJia5.jar"};
+
+        Integer selected_stage= Integer.valueOf((String) session.getAttribute("selected_stage"));
+
+        String ServerURL = application.getInitParameter("ServerURL");
+        String UserID = (String)session.getAttribute("UserID");
+        String adAccount = (String)session.getAttribute("adAccount");
+        String ProductID = (String)session.getAttribute("ProductID");
+        String UserToken = (String)session.getAttribute("UserToken");
+        String IsAutoTopUp = application.getInitParameter("IsAutoTopUp");
+        String IsActiveOnOK = application.getInitParameter("IsActiveOnOK");
+        String ImageURL = application.getInitParameter("ImageURL");
+
+        /**获取敌方成员*/
+        List<EnemyTeam> enemyTeamList = new ArrayList<EnemyTeam>();
+        double sum_enemy_hp_num = 0;
+
+        if(session.getAttribute("enemy_team")!=null){
+            enemyTeamList = (List<EnemyTeam>) JSON.toObject((String) session.getAttribute("enemy_team"), EnemyTeam.class);
+        }
+
+        for(int h = 0; h < enemyTeamList.size(); h++){
+            sum_enemy_hp_num = enemyTeamList.get(h).getHpNumber();
+        }
+    %>
+
+     <%if(select_Index == -1){%>
+
+        <div style="position:absolute; left:0px; top:0px; width:640px; height:526px; z-index:1">
+            <!--<object id="j2meapp" classid="clsid:72E6F181-D1B0-4C22-B0D7-4A0740EEAEF5" width="640" height="530">-->
+            <object id="j2meapp" classid="ipanel:j2me-midp2" width="640" height="530">
+                <param name="-Xkeypass" value="true" />
+                <param name="bgcolor" value="#000000" />
+                <param name="jad" value="<%=jadNames[selected_stage/9]%>" />
+                <param name="jar" value="<%=jarNames[selected_stage/9]%>" />
+                <param name="J2MEVersion" value=" MIDP 2.0,CLDC 1.1" />
+                <param name="ServerURL" value="<%=ServerURL%>" />
+                <param name="Account" value="<%=UserID%>" />
+                <param name="ADAccount" value="<%=adAccount%>" />
+                <param name="GameID" value="<%=ProductID%>" />
+                <param name="UserToken" value="<%=UserToken%>" />
+                <param name="IsAutoTopUp" value="<%=IsAutoTopUp%>" />
+                <param name="IsActiveOnOK" value="<%=IsActiveOnOK%>" />
+                <param name="ImageURL" value="<%=ImageURL%>" />
+                <param name="enemyTeamStr" value="<%=sum_enemy_hp_num%>" />
+                <param name="sessionId" value="<%=session.getId()%>" />
+                <param name="selected_stage" value="<%=selected_stage%>" />
+                <param name="game_info_url" value="<%=host%>/HttpService/GameInfoServlet.ashx" />
+                <param name="return_url" value="<%=host%>" />
+            </object>
+        </div>
+
+     <%}%>
 </body>
 </html>

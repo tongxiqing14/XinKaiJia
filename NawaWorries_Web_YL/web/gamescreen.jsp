@@ -2,8 +2,13 @@
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="com.fancyy.json.util.JSON" %>
+<%@ page import="java.util.Properties" %>
+<%@ page import="common.PropertiesOp" %>
 <%@ page contentType="text/html; charset=gb2312" language="java"%>
 <%
+    PropertiesOp propertiesOp = new PropertiesOp();
+    Properties properties1 = propertiesOp.load("/initial/gamebgimgpath.properties");
+
     String servletPath = request.getServletPath();
     StringBuffer requestURL = request.getRequestURL();
     String host = requestURL.substring(0,requestURL.lastIndexOf(servletPath));
@@ -102,7 +107,8 @@
 <%--<script type="text/javascript">--%>
     <%----%>
     <%--function on_load(){--%>
-         <%--if--%>
+        <%--/**根据选择变化关卡背景*/--%>
+        <%--document.getElementById("id00").src = <%=properties1.getProperty("imgpath"+(selected_stage+1))%>;--%>
     <%--}--%>
     <%----%>
 
@@ -112,7 +118,7 @@
 
 
 
-<img id="loading" src="images/loading.png" style="position:absolute; left:0px; top:0px; z-index:1"/>
+<img id="loading" src="<%=properties1.getProperty("imgpath"+(selected_stage+1))%>" style="position:absolute; left:0px; top:0px; z-index:1"/>
 
 <%--<div id="test_div4" style="z-index: 5;font-size:16px;font-weight: bold;position: absolute; top: 145px; left: 80px;color: #ffffff;"><%=enemyTeamStr%></div>--%>
 
