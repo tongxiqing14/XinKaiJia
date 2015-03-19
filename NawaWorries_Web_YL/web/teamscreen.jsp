@@ -711,6 +711,7 @@
         }
     %>
 
+
      <%if(select_Index_ == -1){%>
 
         <div style="position:absolute; left:0px; top:0px; width:640px; height:526px; z-index:1">
