@@ -95,7 +95,7 @@ public class StageEnemyServlet extends HttpServlet {
 
         try {
 
-            for(int h = 1; h < enemyMotionPaths.length; h++){
+            for(int h = 0; h < enemyMotionPaths.length; h++){
                 if(selected_stage == h){
                     JSONObject jsonStage = new JSONObject();
                     JSONArray jsonArray = new JSONArray();
