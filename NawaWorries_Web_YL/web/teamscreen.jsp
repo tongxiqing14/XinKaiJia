@@ -253,7 +253,7 @@
                                         if (xmlhttp.readyState == 4) {
                                             var js = eval(xmlhttp.responseText);
                                             if(js[0].id == 0){
-                                                window.location.href = "teamscreen.jsp?select_Index="+selectIndex+"&select_Index_=-1";
+                                                window.location.href = "teamscreen.jsp?select_Index="+2+"&select_Index_=-1";
                                             }else{
 
                                             }
@@ -462,8 +462,10 @@
                 document.getElementById("div_command").innerHTML = '<br>请选择一到两位宠物参战   <font size="4px" color="#ff2c50">【按5键快速进入游戏】</font>';
             }else if(selectIndex == 3){
                 document.getElementById("img_team_id4").src = "team/fight.png";
-                document.div_mouse_left_x = 67+select_title_horizontal_Index*80;      /**鼠标调到战斗图标上*/
-                document.div_mouse_top_y = 381;
+                document.getElementById("div_team_id4").style.left = '462px';
+                document.getElementById("div_team_id4").style.top = '375px';
+                document.div_mouse_left_x = 77+select_title_horizontal_Index*80;      /**鼠标调到战斗图标上*/
+                document.div_mouse_top_y = 383;
             }
 
         }
@@ -488,6 +490,10 @@
                     document.getElementById("div_command").innerHTML = '<br>请选择一到两位宠物参战   <font size="4px" color="#ff2c50">【按5键快速进入游戏】</font>';
                 }else if(selectIndex == 3){
                     document.getElementById("img_team_id4").src = "team/fight.png";
+                    document.getElementById("div_team_id4").style.left = '462px';
+                    document.getElementById("div_team_id4").style.top = '375px';
+                    document.div_mouse_left_x = 77+select_title_horizontal_Index*80;      /**鼠标调到战斗图标上*/
+                    document.div_mouse_top_y = 383;
                 }
 
                 if(select_title_horizontal_Index==5){
