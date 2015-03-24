@@ -227,6 +227,24 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>GameInfoIIServlet</servlet-name>
+        <servlet-class>web_services.GameInfoIIServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GameInfoIIServlet</servlet-name>
+        <url-pattern>/HttpService/GameInfoIIServlet.ashx</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GameInfoIIIServlet</servlet-name>
+        <servlet-class>web_services.GameInfoIIIServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GameInfoIIIServlet</servlet-name>
+        <url-pattern>/HttpService/GameInfoIIIServlet.ashx</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>ScreenToPageAction</servlet-name>
         <servlet-class>web_services.ScreenToPageAction</servlet-class>
     </servlet>
