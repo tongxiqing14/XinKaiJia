@@ -1,11 +1,9 @@
 package web_services;
 
-import beans.FighterBean;
-import beans.FighterHpDown;
-import beans.FighterHpDownII;
-import beans.FighterItemBean;
+import beans.*;
 import com.fancyy.json.util.JSON;
 import common.MySessionContext;
+import elements.EnemyTeam;
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
@@ -15,7 +13,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by tongxiqing on 2015/3/25.
@@ -32,7 +32,7 @@ public class FighterHpDownServlet extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        ServletOutputStream out_  = resp.getOutputStream();
+        ServletOutputStream out_  = resp.getOutputStream();
         String sessionId = req.getParameter("sessionId");
         HttpSession session1 = MySessionContext.getSession(sessionId);
 
@@ -93,21 +93,45 @@ public class FighterHpDownServlet extends HttpServlet {
             }
         }
 
+//        double sum_enemy_hp_num = 0;
+        double sum_enemy_fight_num = 0;
+        double avr_enemytoher_fight_num = 0;
+
+        /**获取敌方成员*/
+        List<EnemyTeam> enemyTeamList =
+                (List<EnemyTeam>) JSON.toObject((String) session1.getAttribute("enemy_team"), EnemyTeam.class);
+
+        for(int h = 0; h < enemyTeamList.size(); h++){
+//            sum_enemy_hp_num += enemyTeamList.get(h).getHpNumber();
+            sum_enemy_fight_num += enemyTeamList.get(h).getFight_number();
+        }
+
+        avr_enemytoher_fight_num = sum_enemy_fight_num / fighterHpDowns.size();
+
+        List<HpDownStepValue> hpDownStepValues = new ArrayList<HpDownStepValue>();
+        Map hpDownStepValueMap = new HashMap();
         List<FighterHpDownII> fighterHpDownIIs = new ArrayList<FighterHpDownII>();
 
         for(FighterHpDown fighterHpDown : fighterHpDowns){
             FighterHpDownII fighterHpDownII = new FighterHpDownII(fighterHpDown.getFighterId(),95);
             fighterHpDownIIs.add(fighterHpDownII);
+
+            HpDownStepValue hpDownStepValue = new HpDownStepValue(fighterHpDown.getFighterId(),(avr_enemytoher_fight_num/fighterHpDown.getFighterHp())*95);
+            hpDownStepValues.add(hpDownStepValue);
+
+            hpDownStepValueMap.put(fighterHpDown.getFighterId(),(avr_enemytoher_fight_num/fighterHpDown.getFighterHp())*95);
         }
 
         session1.setAttribute("fighterHpDowns", fighterHpDowns);
         session1.setAttribute("fighterHpDownIIs", fighterHpDownIIs);
+        session1.setAttribute("hpDownStepValues", hpDownStepValues);
+        session1.setAttribute("hpDownStepValueMap", hpDownStepValueMap);
 
-//        String return__ =  JSON.toJson(fighterHpDowns);
+        String return__ =  JSON.toJson(hpDownStepValues);
 
-//        out_.write(return__.getBytes("GBK"));
-//        out_.println();
-//        out_.close();
+        out_.write(return__.getBytes("GBK"));
+        out_.println();
+        out_.close();
     }
 
 }

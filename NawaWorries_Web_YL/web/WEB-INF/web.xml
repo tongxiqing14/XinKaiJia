@@ -262,6 +262,24 @@
         <url-pattern>/HttpService/FighterInfoServlet.ashx</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>FighterHpDownServlet</servlet-name>
+        <servlet-class>web_services.FighterHpDownServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FighterHpDownServlet</servlet-name>
+        <url-pattern>/HttpService/FighterHpDownServlet.ashx</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FighterHpDownIIServlet</servlet-name>
+        <servlet-class>web_services.FighterHpDownIIServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FighterHpDownIIServlet</servlet-name>
+        <url-pattern>/HttpService/FighterHpDownIIServlet.ashx</url-pattern>
+    </servlet-mapping>
+
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
