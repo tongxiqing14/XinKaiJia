@@ -36,6 +36,8 @@ public class FighterHpDownServlet extends HttpServlet {
         String sessionId = req.getParameter("sessionId");
         HttpSession session1 = MySessionContext.getSession(sessionId);
 
+        System.out.println("************1");
+
         /**获取 hero list*/
         List<FighterBean> heroList = (List<FighterBean>) session1.getAttribute("_FighterData");
 
@@ -45,7 +47,7 @@ public class FighterHpDownServlet extends HttpServlet {
         for (FighterBean heroItem : heroList){
             if(heroItem.isSelect_flag()) selectHeroList.add(heroItem);
         }
-
+        System.out.println("************2");
         /**筛选 hero list中的hero list*/
 //        List<FighterItemBean> monsterList_in_heroList = new ArrayList<FighterItemBean>();
         List<FighterHpDown> fighterHpDowns = new ArrayList<FighterHpDown>();
@@ -62,7 +64,7 @@ public class FighterHpDownServlet extends HttpServlet {
                 }
             }
         }
-
+        System.out.println("************3");
         /**筛选 hero list中的monster list*/
         List<FighterBean> followlist_in_selectHerolist = new ArrayList<FighterBean>();
         for(FighterBean heroItem : selectHeroList){
@@ -77,7 +79,7 @@ public class FighterHpDownServlet extends HttpServlet {
                 }
             }
         }
-
+        System.out.println("************4");
         /**筛选 hero list中的pet list*/
         List<FighterBean> petlist_in_selectHerolist = new ArrayList<FighterBean>();
         for(FighterBean heroItem : selectHeroList){
@@ -92,7 +94,7 @@ public class FighterHpDownServlet extends HttpServlet {
                 }
             }
         }
-
+        System.out.println("************5");
 //        double sum_enemy_hp_num = 0;
         double sum_enemy_fight_num = 0;
         double avr_enemytoher_fight_num = 0;
@@ -111,7 +113,7 @@ public class FighterHpDownServlet extends HttpServlet {
         List<HpDownStepValue> hpDownStepValues = new ArrayList<HpDownStepValue>();
         Map hpDownStepValueMap = new HashMap();
         List<FighterHpDownII> fighterHpDownIIs = new ArrayList<FighterHpDownII>();
-
+        System.out.println("************6");
         for(FighterHpDown fighterHpDown : fighterHpDowns){
             FighterHpDownII fighterHpDownII = new FighterHpDownII(fighterHpDown.getFighterId(),95);
             fighterHpDownIIs.add(fighterHpDownII);
@@ -126,8 +128,10 @@ public class FighterHpDownServlet extends HttpServlet {
         session1.setAttribute("fighterHpDownIIs", fighterHpDownIIs);
         session1.setAttribute("hpDownStepValues", hpDownStepValues);
         session1.setAttribute("hpDownStepValueMap", hpDownStepValueMap);
+        System.out.println("************7");
+        String return__ =  JSON.toJson(fighterHpDownIIs);
 
-        String return__ =  JSON.toJson(hpDownStepValues);
+        System.out.println("*****"+return__+"*****");
 
         out_.write(return__.getBytes("GBK"));
         out_.println();

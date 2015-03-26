@@ -85,6 +85,8 @@ public class GameInfoIIIServlet extends HttpServlet {
 
         String return__ =  JSON.toJson(monsterList_in_heroList);
 
+        System.out.println("*****"+return__+"*****");
+
         out_.write(return__.getBytes("GBK"));
         out_.println();
         out_.close();

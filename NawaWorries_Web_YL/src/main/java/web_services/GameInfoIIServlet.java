@@ -37,6 +37,8 @@ public class GameInfoIIServlet extends HttpServlet {
 
         String return__ =  JSON.toJson(enemyTeamList);
 
+        System.out.println("*****"+return__+"*****");
+
         out_.write(return__.getBytes("GBK"));
         out_.println();
         out_.close();
