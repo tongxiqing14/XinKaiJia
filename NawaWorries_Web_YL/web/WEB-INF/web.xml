@@ -8,6 +8,11 @@
     </context-param>
 
     <context-param>
+        <param-name>ImageURL</param-name>
+        <param-value>/</param-value>
+    </context-param>
+
+    <context-param>
         <param-name>IsButtonOnOK</param-name>
         <param-value>false</param-value>
     </context-param>
@@ -278,6 +283,15 @@
     <servlet-mapping>
         <servlet-name>FighterHpDownIIServlet</servlet-name>
         <url-pattern>/HttpService/FighterHpDownIIServlet.ashx</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TestServlet</servlet-name>
+        <servlet-class>tools.TestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestServlet</servlet-name>
+        <url-pattern>/HttpService/TestServlet.ashx</url-pattern>
     </servlet-mapping>
 
     <welcome-file-list>

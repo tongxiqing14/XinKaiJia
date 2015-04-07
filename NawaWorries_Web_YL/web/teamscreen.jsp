@@ -683,10 +683,10 @@
 </a>
 
     <%
-        String[] jadNames = {"CP901001/XinKaiJia1.jad","CP901001/XinKaiJia2.jad","CP901001/XinKaiJia3.jad",
-                "CP901001/XinKaiJia4.jad","CP901001/XinKaiJia5.jad"};
-        String[] jarNames = {"CP901001/XinKaiJia1.jar","CP901001/XinKaiJia2.jar","CP901001/XinKaiJia3.jar",
-                "CP901001/XinKaiJia4.jar","CP901001/XinKaiJia5.jar"};
+//        String[] jadNames = {"CP901001/XinKaiJia1.jad","CP901001/XinKaiJia2.jad","CP901001/XinKaiJia3.jad",
+//                "CP901001/XinKaiJia4.jad","CP901001/XinKaiJia5.jad"};
+//        String[] jarNames = {"CP901001/XinKaiJia1.jar","CP901001/XinKaiJia2.jar","CP901001/XinKaiJia3.jar",
+//                "CP901001/XinKaiJia4.jar","CP901001/XinKaiJia5.jar"};
 
         Integer selected_stage= Integer.valueOf((String) session.getAttribute("selected_stage"));
 
@@ -725,8 +725,8 @@
             <object id="j2meapp" classid="ipanel:j2me-midp2" width="640" height="530">
                 <param name="-Xkeypass" value="true" />
                 <param name="bgcolor" value="#000000" />
-                <param name="jad" value="<%=jadNames[selected_stage/9]%>" />
-                <param name="jar" value="<%=jarNames[selected_stage/9]%>" />
+                <param name="jad" value="CP901001/XinKaiJia1.jad" />
+                <param name="jar" value="CP901001/XinKaiJia1.jar" />
                 <param name="J2MEVersion" value=" MIDP 2.0,CLDC 1.1" />
                 <param name="ServerURL" value="<%=ServerURL%>" />
                 <param name="Account" value="<%=UserID%>" />

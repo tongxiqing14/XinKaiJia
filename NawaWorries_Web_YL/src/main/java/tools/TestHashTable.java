@@ -1,5 +1,6 @@
 package tools;
 
+import java.lang.reflect.Constructor;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Iterator;
@@ -73,6 +74,15 @@ public class TestHashTable {
 ////            System.out.println(v);
 //            if(count>=4) break;
 //        }
+
+        Class effectclass2 = null;
+        try {
+            effectclass2 = Class.forName("elements.PointCoco");
+//            Constructor cons = effectclass2.getConstructor(paraTypes);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
     }
 }
 
