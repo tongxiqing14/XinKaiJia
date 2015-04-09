@@ -118,7 +118,7 @@
             }
         }
 
-        <jsp:include page="topuphtmls/teamscreen/mouse_js_method.jsp"></jsp:include>
+        <jsp:include page="topuphtmls/teamscreen/mouse_js_method.jsp"/>
         <jsp:include page="topuphtmls/shoproom/ajax_show_balance.jsp"/>/**调用mouse_js_method.jsp的方法,实现获取余额功能*/
 
         function run(){

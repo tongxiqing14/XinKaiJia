@@ -472,6 +472,8 @@
 
         function run(){
 
+//            mouse();
+
             if("<%=(followingPage == null)%>" == "true"){
                 /**根据选择变化关卡背景*/
 
