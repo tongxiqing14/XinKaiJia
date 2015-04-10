@@ -23,7 +23,7 @@ function watership_effect(image_tab_id,div_tab_id){
     if (warship_img_array_index>=warship_img_array.length) warship_img_array_index = 0;
 
     if(document.warship_img_array_x <= 400){
-        if(!document.browserIsEc1308)  setTimeout("watership_effect(watership_effect_image_tab_id,watership_effect_div_tab_id)",40);         // control the FPS
+          setTimeout("watership_effect(watership_effect_image_tab_id,watership_effect_div_tab_id)",40);         // control the FPS
     }else{
         document.warship_img_array_x = 10;
         document.getElementById(div_tab_id).style.left = -600+"px";
@@ -44,7 +44,7 @@ function lighting_effect(image_tab_id,div_tab_id){
         lighting_img_array_index = 0;
         document.getElementById(div_tab_id).style.left = -1240+"px";
     }else{
-        if(!document.browserIsEc1308)  setTimeout("lighting_effect(lighting_effect_image_tab_id,lighting_effect_image_tab_id)",250);         // control the FPS
+        setTimeout("lighting_effect(lighting_effect_image_tab_id,lighting_effect_image_tab_id)",250);         // control the FPS
     }
 
 }
@@ -63,7 +63,7 @@ function atomic_elect_effect(image_tab_id,div_tab_id){
         atomic_elect_img_array_index = 0;
         document.getElementById(div_tab_id).style.left = -1000+"px";
     }else{
-        if(!document.browserIsEc1308)  setTimeout("atomic_elect_effect(atomic_elect_effect_image_tab_id,atomic_elect_effect_div_tab_id)",250);         // control the FPS
+          setTimeout("atomic_elect_effect(atomic_elect_effect_image_tab_id,atomic_elect_effect_div_tab_id)",250);         // control the FPS
     }
 }
 
@@ -81,7 +81,7 @@ function blue_wind_effect(image_tab_id,div_tab_id){
         blue_wind_img_array_index = 0;
         document.getElementById(div_tab_id).style.left = -1000+"px";
     }else{
-        if(!document.browserIsEc1308)  setTimeout("blue_wind_effect(blue_wind_effect_image_tab_id,blue_wind_effect_div_tab_id)",250);         // control the FPS
+          setTimeout("blue_wind_effect(blue_wind_effect_image_tab_id,blue_wind_effect_div_tab_id)",250);         // control the FPS
     }
 }
 
@@ -119,6 +119,6 @@ function gripper_effect_imp(){
         document.getElementById("div_gripper_effect_id4").style.left = -1000+"px";
         document.getElementById("div_gripper_effect_id5").style.left = -1000+"px";
     }else{
-        if(!document.browserIsEc1308)  setTimeout("gripper_effect_imp()",250);         // control the FPS
+          setTimeout("gripper_effect_imp()",250);         // control the FPS
     }
 }

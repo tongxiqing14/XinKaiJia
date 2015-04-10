@@ -21,14 +21,14 @@
 
             if(keyCode==UT.ZERO||keyCode==ZTE.ZERO||keyCode==HW.ZERO
                     ||keyCode==UT.BACK||keyCode==ZTE.BACK||keyCode==HW.BACK){
-                window.location.href = "index.jsp";
+                window.location.href = "index0.jsp";
             }
         }
     </script>
 </head>
 <body>
     <div id="div_bg_id" style="position: absolute;left: 0px;top: 0px;">
-        <img src="help/help.jpg"/>
+        <img src="help/help.png"/>
     </div>
 </body>
 </html>

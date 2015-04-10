@@ -103,7 +103,7 @@ function  right_pet01(pet1Imgname){
         create_Animation("div_right_pet_id01","img_right_pet_id01",temp_petright_Img,pet_horse_i01,div_right_pet1_x,(div_right_pet1_y- document.delta_enemy_top_y_frame));
         pet_horse_i01++;
         if (pet_horse_i01>=temp_petright_Img.length) pet_horse_i01 = 0;
-        if(!document.browserIsEc1308)  setTimeout("right_pet01(temp_petright_Img)",250);         // control the FPS
+          setTimeout("right_pet01(temp_petright_Img)",250);         // control the FPS
     }
 }
 
@@ -161,7 +161,7 @@ function  right_follow01(follow1ImgName){
         create_Animation("div_right_follow_id01","img_right_follow_id01",temp_followright_Img,follow_i01,div_right_follow1_x,(div_right_follow1_y- document.delta_enemy_top_y_frame));
         follow_i01++;
         if (follow_i01>=temp_followright_Img.length) follow_i01 = 0;
-        if(!document.browserIsEc1308)  setTimeout("right_follow01(temp_followright_Img)",250);         // control the FPS
+          setTimeout("right_follow01(temp_followright_Img)",250);         // control the FPS
     }
 }
 
@@ -219,7 +219,7 @@ function pet41(pet41Img){
         create_Animation("div_pet_id01","img_pet_id01",temp_pet41,pet41_i,div_left_pet1_x,div_left_pet1_y);
         pet41_i++;
         if (pet41_i>=temp_pet41.length) pet41_i = 0;
-        if(!document.browserIsEc1308)  setTimeout("pet41(temp_pet41)",250);         // control the FPS
+          setTimeout("pet41(temp_pet41)",250);         // control the FPS
     }
 }
 
@@ -315,9 +315,9 @@ function follow1_action(ren_wuImg){
 //        }
 
         if(ren_wu_i == 1){
-            if(!document.browserIsEc1308)  setTimeout("follow1_action(temp_follow1)",300);         // control the FPS
+             setTimeout("follow1_action(temp_follow1)",300);         // control the FPS
         }else{
-            if(!document.browserIsEc1308)  setTimeout("follow1_action(temp_follow1)",100);         // control the FPS
+             setTimeout("follow1_action(temp_follow1)",100);         // control the FPS
         }
     }
 
@@ -361,9 +361,9 @@ function follow2_action(white_left_wolf_Img){
 //        }
 
         if(document.ren_wu_follow2_i == 1){
-            if(!document.browserIsEc1308)  setTimeout("follow2_action(temp_follow2)",300);         // control the FPS
+              setTimeout("follow2_action(temp_follow2)",300);         // control the FPS
         }else{
-            if(!document.browserIsEc1308)  setTimeout("follow2_action(temp_follow2)",100);         // control the FPS
+              setTimeout("follow2_action(temp_follow2)",100);         // control the FPS
         }
     }
 }
@@ -423,7 +423,7 @@ function hero_right_action(heroImgName){
         hero_right_i++;
         if (hero_right_i>=temp_right_Img.length) hero_right_i = 0;
 
-        if(!document.browserIsEc1308)  setTimeout("hero_right_action(temp_right_Img)",200);         // control the FPS
+         setTimeout("hero_right_action(temp_right_Img)",200);         // control the FPS
     }
 }
 

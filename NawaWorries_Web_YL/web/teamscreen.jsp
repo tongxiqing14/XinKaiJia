@@ -160,7 +160,13 @@
                         if (xmlhttp.readyState == 4) {
                             var js = eval(xmlhttp.responseText);
                             if(js[0].id == 0){
-                                window.location.href = "teamscreen.jsp?select_Index="+selectIndex+"&select_Index_=-1";
+                                var pattern = new RegExp("zte");
+                                if (!pattern.exec(navigator.appName+"")){
+                                    window.location.href = "teamscreen.jsp?select_Index="+selectIndex+"&select_Index_=-1";
+                                }else{
+                                    window.location.href = "gamescreen.jsp?selectIndex="+selectIndex;
+                                }
+
                             }else{
 
                             }
@@ -253,7 +259,13 @@
                                         if (xmlhttp.readyState == 4) {
                                             var js = eval(xmlhttp.responseText);
                                             if(js[0].id == 0){
-                                                window.location.href = "teamscreen.jsp?select_Index="+2+"&select_Index_=-1";
+                                                var pattern = new RegExp("zte");
+                                                if (!pattern.exec(navigator.appName+"")){
+                                                    window.location.href = "teamscreen.jsp?select_Index="+selectIndex+"&select_Index_=-1";
+                                                }else{
+                                                    window.location.href = "gamescreen.jsp?selectIndex="+selectIndex;
+                                                }
+//                                                window.location.href = "teamscreen.jsp?select_Index="+2+"&select_Index_=-1";
                                             }else{
 
                                             }

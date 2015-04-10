@@ -479,31 +479,31 @@ function transit$(js){
         starInput = "";
         document.getElementById("div_span_password_id").innerText = starInput;
     }else if(js[0].id == 81&&js[0].result == 0){      //购买后排1技能
-        window.location.href = "gamescreen.jsp?skill=1";
+        window.location.href = "gamescreen.jsp";
     }else if(js[0].id == 81&&js[0].result == 1){
         hasTongsuoOrNot = true;
         starInput = "";
         document.getElementById("div_span_password_id").innerText = starInput;
     }else if(js[0].id == 82&&js[0].result == 0){      //购买后排2技能
-        window.location.href = "gamescreen.jsp?skill=2";
+        window.location.href = "gamescreen.jsp";
     }else if(js[0].id == 82&&js[0].result == 1){
         hasTongsuoOrNot = true;
         starInput = "";
         document.getElementById("div_span_password_id").innerText = starInput;
     }else if(js[0].id == 83&&js[0].result == 0){      //购买中排1技能
-        window.location.href = "gamescreen.jsp?skill=3";
+        window.location.href = "gamescreen.jsp";
     }else if(js[0].id == 83&&js[0].result == 1){
         hasTongsuoOrNot = true;
         starInput = "";
         document.getElementById("div_span_password_id").innerText = starInput;
     }else if(js[0].id == 84&&js[0].result == 0){      //购买中排2技能
-        window.location.href = "gamescreen.jsp?skill=4";
+        window.location.href = "gamescreen.jsp";
     }else if(js[0].id == 84&&js[0].result == 1){
         hasTongsuoOrNot = true;
         starInput = "";
         document.getElementById("div_span_password_id").innerText = starInput;
     }else if(js[0].id == 85&&js[0].result == 0){      //购买前排技能
-        window.location.href = "gamescreen.jsp?skill=5";
+        window.location.href = "gamescreen.jsp";
     }else if(js[0].id == 85&&js[0].result == 1){
         hasTongsuoOrNot = true;
         starInput = "";
@@ -621,31 +621,31 @@ function transit(js){
         document.getElementById("div_tong_suo_id").style.left = 100+'px';
         hasTongsuoOrNot = true;
     }else if(js[0].id == 81&&js[0].result == 0){      //购买后排1技能
-        window.location.href = "gamescreen.jsp?skill=1";
+        window.location.href = "gamescreen.jsp";
     }else if(js[0].id == 81&&js[0].result == 1){
         document.getElementById("div2").style.left = -1000+'px';
         document.getElementById("div_tong_suo_id").style.left = 100+'px';
         hasTongsuoOrNot = true;
     }else if(js[0].id == 82&&js[0].result == 0){      //购买后排2技能
-        window.location.href = "gamescreen.jsp?skill=2";
+        window.location.href = "gamescreen.jsp";
     }else if(js[0].id == 82&&js[0].result == 1){
         document.getElementById("div2").style.left = -1000+'px';
         document.getElementById("div_tong_suo_id").style.left = 100+'px';
         hasTongsuoOrNot = true;
     }else if(js[0].id == 83&&js[0].result == 0){      //购买中排1技能
-        window.location.href = "gamescreen.jsp?skill=3";
+        window.location.href = "gamescreen.jsp";
     }else if(js[0].id == 83&&js[0].result == 1){
         document.getElementById("div2").style.left = -1000+'px';
         document.getElementById("div_tong_suo_id").style.left = 100+'px';
         hasTongsuoOrNot = true;
     }else if(js[0].id == 84&&js[0].result == 0){      //购买中排2技能
-        window.location.href = "gamescreen.jsp?skill=4";
+        window.location.href = "gamescreen.jsp";
     }else if(js[0].id == 84&&js[0].result == 1){
         document.getElementById("div2").style.left = -1000+'px';
         document.getElementById("div_tong_suo_id").style.left = 100+'px';
         hasTongsuoOrNot = true;
     }else if(js[0].id == 85&&js[0].result == 0){      //购买前排技能
-        window.location.href = "gamescreen.jsp?skill=5";
+        window.location.href = "gamescreen.jsp";
     }else if(js[0].id == 85&&js[0].result == 1){
         document.getElementById("div2").style.left = -1000+'px';
         document.getElementById("div_tong_suo_id").style.left = 100+'px';

@@ -77,6 +77,6 @@ function dazhao2_effect_imp(){
         document.getElementById("div_dazhao2_id4").style.left = -1000+"px";
         document.getElementById("div_dazhao2_id5").style.left = -1000+"px";
     }else{
-        if(!document.browserIsEc1308)   setTimeout("dazhao2_effect_imp()",250);         // control the FPS
+        setTimeout("dazhao2_effect_imp()",250);         // control the FPS
     }
 }

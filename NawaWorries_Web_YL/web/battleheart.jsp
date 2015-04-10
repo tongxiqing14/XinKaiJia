@@ -161,7 +161,7 @@ document.sum_hero_fight_num = -1;
 document.sum_enemy_fight_num = -1;
 document.sum_right_enemy_num = 0;
 document.sum_left_hero_num = 0;
-document.browserIsEc1308 = false;
+//document.browserIsEc1308 = false;
 document.div_mouse_left_x = <%=div_mouse_left_x%>;
 document.div_mouse_top_y = <%=div_mouse_top_y%>;
 
@@ -257,7 +257,7 @@ function effect_release(keyCode){
             if(mouse_index==0){                //control action
                 window.location.href = "the9InputScreen.jsp?consume_item_index="+consume_item_index;
             }else if(mouse_index==1){
-                window.location.href = "gamescreen.jsp";
+                window.location.href = "gamescreen1.jsp";
             }
         }else if(consume_step==3){
             xmlhttp = MakeHttpRequest();
@@ -269,7 +269,7 @@ function effect_release(keyCode){
                     var js = eval(xmlhttp.responseText);
 //                            alert(js[0].id);
                     if(js[0].result == 0){
-                        window.location.href = "gamescreen.jsp";
+                        window.location.href = "gamescreen1.jsp";
                     }
                 }
             }
@@ -459,7 +459,7 @@ function onKeyPress(){
     var evt = window.event;
     var keyCode = evt.which ? evt.which : evt.keyCode;
 
-    if(document.browserIsEc1308){
+//    if(document.browserIsEc1308){
         if(keyCode==UT.OK||keyCode==ZTE.OK||keyCode==HW.OK){
             if(document.sum_hero_fight_num == 0){
                 window.location.href = "armorbasescreen.jsp?preScreen=mainscreen";
@@ -467,10 +467,10 @@ function onKeyPress(){
                 window.location.href = "stageMapScreen.jsp";
             }
         }
-    }else {
-        return_release(keyCode);
-        effect_release(keyCode);
-    }
+//    }else {
+//        return_release(keyCode);
+//        effect_release(keyCode);
+//    }
 
 }
 

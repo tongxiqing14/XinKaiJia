@@ -55,7 +55,7 @@ function k_soul_effect_imp(){
         document.getElementById("div_k_soul_id4").style.left = -1000+"px";
         document.getElementById("div_k_soul_id5").style.left = -1000+"px";
     }else{
-        if(!document.browserIsEc1308)  setTimeout("k_soul_effect_imp()",250);         // control the FPS
+          setTimeout("k_soul_effect_imp()",250);         // control the FPS
     }
 }
 
@@ -97,7 +97,7 @@ function falling_fire_effect_imp(){
         document.getElementById("div_falling_fire_id4").style.left = -1000+"px";
         document.getElementById("div_falling_fire_id5").style.left = -1000+"px";
     }else{
-        if(!document.browserIsEc1308)  setTimeout("falling_fire_effect_imp()",500);         // control the FPS
+          setTimeout("falling_fire_effect_imp()",500);         // control the FPS
     }
 }
 
@@ -160,7 +160,7 @@ function barrage_effect_imp(){
         document.getElementById("div_barrage_effect_id9").style.left = -1000+"px";
         document.getElementById("div_barrage_effect_id10").style.left = -1000+"px";
     }else{
-        if(!document.browserIsEc1308)  setTimeout("barrage_effect_imp()",250);         // control the FPS
+          setTimeout("barrage_effect_imp()",250);         // control the FPS
     }
 }
 
@@ -177,7 +177,7 @@ function chain_spike_effect(image_tab_id,div_tab_id){
         chain_spike_img_array_index = 0;
         document.getElementById(div_tab_id).style.left = -1000+"px";
     }else{
-        if(!document.browserIsEc1308)  setTimeout("chain_spike_effect(chain_spike_effect_image_tab_id,chain_spike_effect_div_tab_id)",250);         // control the FPS
+          setTimeout("chain_spike_effect(chain_spike_effect_image_tab_id,chain_spike_effect_div_tab_id)",250);         // control the FPS
     }
 }
 
@@ -216,7 +216,7 @@ function dazhao1_effect_imp(){
         document.getElementById("div_dazhao1_id4").style.left = -1000+"px";
         document.getElementById("div_dazhao1_id5").style.left = -1000+"px";
     }else{
-        if(!document.browserIsEc1308)  setTimeout("dazhao1_effect_imp()",250);         // control the FPS
+          setTimeout("dazhao1_effect_imp()",250);         // control the FPS
     }
 }
 
@@ -257,7 +257,7 @@ function fireball_effect_imp(){
         document.getElementById("div_fireball_effect_id4").style.left = -1000+"px";
         document.getElementById("div_fireball_effect_id5").style.left = -1000+"px";
     }else{
-        if(!document.browserIsEc1308)  setTimeout("fireball_effect_imp()",250);         // control the FPS
+          setTimeout("fireball_effect_imp()",250);         // control the FPS
     }
 }
 
@@ -286,7 +286,7 @@ function ice_effect_imp(){
         document.getElementById("div_ice_effect_id2").style.left = -1000+"px";
         document.getElementById("div_ice_effect_id3").style.left = -1000+"px";
     }else{
-        if(!document.browserIsEc1308)  setTimeout("ice_effect_imp()",250);         // control the FPS
+          setTimeout("ice_effect_imp()",250);         // control the FPS
     }
 }
 
@@ -318,7 +318,7 @@ function thorns_effect_imp(){
     thorns_img_array_index++;
     if (thorns_img_array_index>=thorns_img_array.length){
         if(thorns_img_array_index==thorns_img_array.length){
-            if(!document.browserIsEc1308)  setTimeout("thorns_effect_imp()",1000);         // control the FPS
+              setTimeout("thorns_effect_imp()",1000);         // control the FPS
         }else{
             thorns_img_array_index= 0;
             document.getElementById("div_thorns_effect_id1").style.left = -1000+"px";
@@ -328,7 +328,7 @@ function thorns_effect_imp(){
             document.getElementById("div_thorns_effect_id5").style.left = -1000+"px";
         }
     }else{
-        if(!document.browserIsEc1308)  setTimeout("thorns_effect_imp()",1000);         // control the FPS
+          setTimeout("thorns_effect_imp()",1000);         // control the FPS
     }
 }
 
@@ -369,7 +369,7 @@ function fire_effect_imp(){
         document.getElementById("div_fire_effect_id4").style.left = -1000+"px";
         document.getElementById("div_fire_effect_id5").style.left = -1000+"px";
     }else{
-        if(!document.browserIsEc1308)  setTimeout("fire_effect_imp()",500);         // control the FPS
+          setTimeout("fire_effect_imp()",500);         // control the FPS
     }
 }
 
@@ -434,7 +434,7 @@ function point_Coco_imp(){          /**该技能给敌方释放5个水柱*/
 
     if (point_Coco_img_array_index>=point_Coco_img_array.length){
         if(point_Coco_img_array_index==point_Coco_img_array.length){
-            if(!document.browserIsEc1308)  setTimeout("point_Coco_imp()",1000);         // control the FPS
+              setTimeout("point_Coco_imp()",1000);         // control the FPS
         }else{
             point_Coco_img_array_index = 0;
             document.getElementById("div_point_coco_id1").style.left = -1000+"px";
@@ -444,7 +444,7 @@ function point_Coco_imp(){          /**该技能给敌方释放5个水柱*/
             document.getElementById("div_point_coco_id5").style.left = -1000+"px";
         }
     }else{
-        if(!document.browserIsEc1308)  setTimeout("point_Coco_imp()",500);         // control the FPS
+          setTimeout("point_Coco_imp()",500);         // control the FPS
     }
 }
 
@@ -482,7 +482,7 @@ function storm_imp(){
         document.getElementById("div_storm_id4").style.left = -1000+"px";
         document.getElementById("div_storm_id5").style.left = -1000+"px";
     }else{
-        if(!document.browserIsEc1308)  setTimeout("storm_imp()",250);         // control the FPS
+          setTimeout("storm_imp()",250);         // control the FPS
     }
 }
 

@@ -126,7 +126,7 @@
 
         function transit(){
             <%--if("<%=(followingPage == null)%>" == "true"){--%>
-                window.location.href = "gamescreen.jsp?selectIndex="+<%=request.getParameter("selectIndex")%>;
+                window.location.href = "gamescreen1.jsp?selectIndex="+<%=request.getParameter("selectIndex")%>;
 //            }else{
                 <%--window.location.href = "<%=followingPage%>";--%>
                 <%--<%session.removeAttribute("followingPage");%>--%>
