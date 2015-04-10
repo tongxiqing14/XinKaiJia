@@ -301,11 +301,11 @@ function onKeyPress(){
     }
 
     if(0==selectIndex){
-        document.getElementById("id22").src = "the9Input/2_2.png";
-//        document.getElementById("id33").src = "the9Input/2_2.png";
+        document.getElementById("id22").src = "the9Input/3_1.png";
+        document.getElementById("id33").src = "the9Input/2_2.png";
     }else{
         document.getElementById("id22").src = "the9Input/2_1.png";
-//        document.getElementById("id33").src = "the9Input/3_2.png";
+        document.getElementById("id33").src = "the9Input/3_2.png";
     }
 
 }
@@ -702,16 +702,16 @@ function transit(js){
     </div>
 </div>
 
-<%--<div id="div4" style='position:absolute;z-index:4;left: 340px;top: 370px;'>--%>
-    <%--<a id="id3" href="">--%>
-        <%--<img id="id33" src="the9Input/2_2.png" />--%>
-    <%--</a>--%>
-<%--</div>--%>
+<div id="div4" style='position:absolute;z-index:4;left: 340px;top: 370px;'>
+    <a id="id3" href="">
+        <img id="id33" src="the9Input/2_2.png" />
+    </a>
+</div>
 
 <div id="div3" style='position:absolute;z-index:4;left: 140px;top: 370px;'>
-    <%--<a id="id2" href="">--%>
+    <a id="id2" href="">
         <img id="id22" src="the9Input/2_1.png" />
-    <%--</a>--%>
+    </a>
 </div>
 
 <div id="div_tong_suo_id" style="position: absolute; z-index: 1; left: -1000px; top: 120px;">
