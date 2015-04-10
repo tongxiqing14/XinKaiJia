@@ -691,7 +691,7 @@ function transit(js){
 <div id="test_div" style="z-index: 5;font-size:16px;font-weight: bold;position: absolute; top: 65px; left: 80px;color: #ffffff;"></div>
 
 <div id="div2" style='position: absolute;z-index:3;left: 90px;top: 120px;'>
-    <div id="div_id11" style="position:absolute;left: -38px;top: 181px;">
+    <div id="div_id11" style="position:absolute;left: -38px;top: 182px;">
         <img id="img_id1" src="the9Input/4.png" />
     </div>
     <div id="div_text_id" style='font-size:32px; position: absolute; left: 245px;top: -5px;'>
