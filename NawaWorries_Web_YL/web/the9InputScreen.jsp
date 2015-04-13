@@ -249,6 +249,14 @@ function onKeyPress(){
             }
         }
 
+        if(0==selectIndex){
+            document.getElementById("id22").src = "the9Input/10.png";
+//        document.getElementById("id33").src = "the9Input/2_2.png";
+        }else{
+            document.getElementById("id22").src = "the9Input/11.png";
+//        document.getElementById("id33").src = "the9Input/3_2.png";
+        }
+
     }else if(!topupIsOver){
         if(keyCode == ZTE.LEFT
                 || keyCode == HW.LEFT
@@ -300,15 +308,16 @@ function onKeyPress(){
                 /**蓝色充值界面【返回】*/
             }
         }
+
+        if(0==selectIndex){
+            document.getElementById("id22").src = "the9Input/2_2.png";
+//        document.getElementById("id33").src = "the9Input/2_2.png";
+        }else{
+            document.getElementById("id22").src = "the9Input/2_1.png";
+//        document.getElementById("id33").src = "the9Input/3_2.png";
+        }
     }
 
-    if(0==selectIndex){
-        document.getElementById("id22").src = "the9Input/2_2.png";
-//        document.getElementById("id33").src = "the9Input/2_2.png";
-    }else{
-        document.getElementById("id22").src = "the9Input/2_1.png";
-//        document.getElementById("id33").src = "the9Input/3_2.png";
-    }
 
 }
 
@@ -695,6 +704,8 @@ function transit(js){
         document.getElementById("div_price").style.left = -1000+'px';
         document.getElementById("div_value_name").style.left = -1000+'px';
         document.getElementById("div_value_price").style.left = -1000+'px';
+
+        document.getElementById("id22").src = "the9Input/12.png";
     }
 }
 
