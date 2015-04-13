@@ -694,12 +694,12 @@ function transit(js){
     <div id="div_id11" style="position:absolute;left: -38px;top: 182px;">
         <img id="img_id1" src="the9Input/4.png" />
     </div>
-    <div id="div_text_id" style='font-size:32px; position: absolute; left: 245px;top: -5px;'>
-        <span id="div_span_id" style="font-weight: bold; position: absolute; top: 0; left: 0;"><%=Integer.valueOf(arr11.getString(1))-netInfo.getBalance__()%></span>
-    </div>
-    <div id="div_text_id1" style='font-size:32px; position: absolute; left: 255px;top: 30px;'>
-        <span id="div_span_id1" style="font-weight: bold; position: absolute; top: 0; left: 0;"><%=Integer.valueOf(arr11.getString(1))-netInfo.getBalance__()%></span>
-    </div>
+    <%--<div id="div_text_id" style='font-size:32px; position: absolute; left: 245px;top: -5px;'>--%>
+        <%--<span id="div_span_id" style="font-weight: bold; position: absolute; top: 0; left: 0;"><%=Integer.valueOf(arr11.getString(1))-netInfo.getBalance__()%></span>--%>
+    <%--</div>--%>
+    <%--<div id="div_text_id1" style='font-size:32px; position: absolute; left: 255px;top: 30px;'>--%>
+        <%--<span id="div_span_id1" style="font-weight: bold; position: absolute; top: 0; left: 0;"><%=Integer.valueOf(arr11.getString(1))-netInfo.getBalance__()%></span>--%>
+    <%--</div>--%>
 </div>
 
 <%--<div id="div4" style='position:absolute;z-index:4;left: 340px;top: 370px;'>--%>
@@ -707,6 +707,30 @@ function transit(js){
         <%--<img id="id33" src="the9Input/2_2.png" />--%>
     <%--</a>--%>
 <%--</div>--%>
+
+<div id="div_dangqian" style='position:absolute;z-index:4;left: 50px;top: 50px;'>
+    <%--<a id="id2" href="">--%>
+    <img id="img_dangqian" src="the9Input/1.png" />
+    <%--</a>--%>
+</div>
+
+<div id="div_dinggouerci" style='position:absolute;z-index:4;left: 150px;top: 50px;'>
+    <%--<a id="id2" href="">--%>
+    <img id="img_dinggouerci" src="the9Input/6.png" />
+    <%--</a>--%>
+</div>
+
+<div id="div_changpxiangmu" style='position:absolute;z-index:4;left: 150px;top: 150px;'>
+    <%--<a id="id2" href="">--%>
+    <img id="div_changpxiangmu" src="the9Input/2.png" />
+    <%--</a>--%>
+</div>
+
+<div id="div_price" style='position:absolute;z-index:4;left: 150px;top: 250px;'>
+    <%--<a id="id2" href="">--%>
+    <img id="img_price" src="the9Input/price.png" />
+    <%--</a>--%>
+</div>
 
 <div id="div3" style='position:absolute;z-index:4;left: 160px;top: 430px;'>
     <%--<a id="id2" href="">--%>

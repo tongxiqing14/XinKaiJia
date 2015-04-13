@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<div id="msgDiv" style='position: absolute;z-index: 3;left: -2300px;top: 300px;'>
+<div id="msgDiv" style='position: absolute;z-index: 10;left: -2300px;top: 300px;'>
     <img id="img_popupbox_id" src="stage/popupbox.png" />
     <div id="div_div_msg_id" style="font-size:16px;font-weight: bold;position: absolute; z-index: 2; left: 80px; top: 60px;"></div>
     <div id="div_div_msg1_id" style="font-size:16px;font-weight: bold;position: absolute; z-index: 2; left: 80px; top: 80px;"></div>
