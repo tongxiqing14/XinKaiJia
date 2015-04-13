@@ -732,6 +732,21 @@ function transit(js){
     <%--</a>--%>
 </div>
 
+<div id="div_value_name" style='font-size:22px; z-index:4; position: absolute; left: 300px;top: 100px;color: #FF0000;width: 250px;'>
+    <%--<span id="div_span_id1" style="font-weight: bold;font-size:16px; position: absolute; top: 0; left: 0;color: #ffffff;">--%>
+        <%=Integer.valueOf(arr11.getString(1))-netInfo.getBalance__()%>
+    <%--<%=Integer.valueOf(arr11.getString(1))-netInfo.getBalance__()%>--%>
+    <%--</span>--%>
+</div>
+
+<div id="div_value_price" style='font-size:22px; z-index:4; position: absolute; left: 250px;top: 250px;color: #FF0000;width: 250px;'>
+    <%--<span id="div_span_id1" style="font-weight: bold;font-size:16px; position: absolute; top: 0; left: 0;color: #ffffff;">--%>
+    <%=Integer.valueOf(arr11.getString(1))-netInfo.getBalance__()%>&nbsp;&nbsp;元
+        <%--<%=Integer.valueOf(arr11.getString(1))-netInfo.getBalance__()%>--%>
+    <%--</span>--%>
+</div>
+
+
 <div id="div3" style='position:absolute;z-index:4;left: 160px;top: 430px;'>
     <%--<a id="id2" href="">--%>
         <img id="id22" src="the9Input/2_1.png" />
