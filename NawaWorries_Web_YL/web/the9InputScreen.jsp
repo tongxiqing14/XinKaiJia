@@ -585,7 +585,7 @@ function transit(js){
         window.location.href = "backpackscreen.jsp";
         <%}%>
     }else if((js[0].id >= 61&&js[0].id <= 72)&&js[0].result == 1){
-        document.getElementById("div2").style.left = -1000+'px';
+        //document.getElementById("div2").style.left = -1000+'px';
         document.getElementById("div_tong_suo_id").style.left = 100+'px';
         hasTongsuoOrNot = true;
     }else if((js[0].id >= 1&&js[0].id <= 7)&&js[0].result == 0){        //购买人物刑天侠
@@ -595,7 +595,7 @@ function transit(js){
         window.location.href = "hero.jsp";
         <%}%>
     }else if((js[0].id >= 1&&js[0].id <= 7)&&js[0].result == 1){
-        document.getElementById("div2").style.left = -1000+'px';
+        //document.getElementById("div2").style.left = -1000+'px';
         document.getElementById("div_tong_suo_id").style.left = 100+'px';
         hasTongsuoOrNot = true;
     }else if(js[0].id == 2&&js[0].result == 0){        //购买人物金刚侠
@@ -605,55 +605,55 @@ function transit(js){
         window.location.href = "hero.jsp";
         <%}%>
     }else if(js[0].id == 2&&js[0].result == 1){
-        document.getElementById("div2").style.left = -1000+'px';
+        //document.getElementById("div2").style.left = -1000+'px';
         document.getElementById("div_tong_suo_id").style.left = 100+'px';
         hasTongsuoOrNot = true;
     }else if(js[0].id == 1000&&js[0].result == 0){        //强化飞影侠
         window.location.href = "hero.jsp";
     }else if(js[0].id == 1000&&js[0].result == 1){
-        document.getElementById("div2").style.left = -1000+'px';
+        //document.getElementById("div2").style.left = -1000+'px';
         document.getElementById("div_tong_suo_id").style.left = 100+'px';
         hasTongsuoOrNot = true;
     }else if(js[0].id == 1001&&js[0].result == 0){        //强化刑天侠
         window.location.href = "hero.jsp";
     }else if(js[0].id == 1001&&js[0].result == 1){
-        document.getElementById("div2").style.left = -1000+'px';
+        //document.getElementById("div2").style.left = -1000+'px';
         document.getElementById("div_tong_suo_id").style.left = 100+'px';
         hasTongsuoOrNot = true;
     }else if(js[0].id == 1002&&js[0].result == 0){        //强化金刚侠
         window.location.href = "hero.jsp";
     }else if(js[0].id == 1002&&js[0].result == 1){
-        document.getElementById("div2").style.left = -1000+'px';
+        //document.getElementById("div2").style.left = -1000+'px';
         document.getElementById("div_tong_suo_id").style.left = 100+'px';
         hasTongsuoOrNot = true;
     }else if(js[0].id == 81&&js[0].result == 0){      //购买后排1技能
         window.location.href = "gamescreen.jsp";
     }else if(js[0].id == 81&&js[0].result == 1){
-        document.getElementById("div2").style.left = -1000+'px';
+        //document.getElementById("div2").style.left = -1000+'px';
         document.getElementById("div_tong_suo_id").style.left = 100+'px';
         hasTongsuoOrNot = true;
     }else if(js[0].id == 82&&js[0].result == 0){      //购买后排2技能
         window.location.href = "gamescreen.jsp";
     }else if(js[0].id == 82&&js[0].result == 1){
-        document.getElementById("div2").style.left = -1000+'px';
+        //document.getElementById("div2").style.left = -1000+'px';
         document.getElementById("div_tong_suo_id").style.left = 100+'px';
         hasTongsuoOrNot = true;
     }else if(js[0].id == 83&&js[0].result == 0){      //购买中排1技能
         window.location.href = "gamescreen.jsp";
     }else if(js[0].id == 83&&js[0].result == 1){
-        document.getElementById("div2").style.left = -1000+'px';
+        //document.getElementById("div2").style.left = -1000+'px';
         document.getElementById("div_tong_suo_id").style.left = 100+'px';
         hasTongsuoOrNot = true;
     }else if(js[0].id == 84&&js[0].result == 0){      //购买中排2技能
         window.location.href = "gamescreen.jsp";
     }else if(js[0].id == 84&&js[0].result == 1){
-        document.getElementById("div2").style.left = -1000+'px';
+        //document.getElementById("div2").style.left = -1000+'px';
         document.getElementById("div_tong_suo_id").style.left = 100+'px';
         hasTongsuoOrNot = true;
     }else if(js[0].id == 85&&js[0].result == 0){      //购买前排技能
         window.location.href = "gamescreen.jsp";
     }else if(js[0].id == 85&&js[0].result == 1){
-        document.getElementById("div2").style.left = -1000+'px';
+        //document.getElementById("div2").style.left = -1000+'px';
         document.getElementById("div_tong_suo_id").style.left = 100+'px';
         hasTongsuoOrNot = true;
     }else if((js[0].id >= 181&&js[0].id <= 189)&&js[0].result == 0){      //购买宠物靓靓
@@ -663,25 +663,25 @@ function transit(js){
         window.location.href = "backpackscreen.jsp";
         <%}%>
     }else if((js[0].id >= 181&&js[0].id <= 189)&&js[0].result == 1){
-        document.getElementById("div2").style.left = -1000+'px';
+        //document.getElementById("div2").style.left = -1000+'px';
         document.getElementById("div_tong_suo_id").style.left = 100+'px';
         hasTongsuoOrNot = true;
     }else if((js[0].id == 281||js[0].id == 282||js[0].id == 283||js[0].id == 284||js[0].id == 285||js[0].id == 286||js[0].id == 287)&&js[0].result == 0){      //购买英雄升级
         window.location.href = "armorbasescreen.jsp"+"?task_selectIndex_y="+<%=hero_index%>;
     }else if((js[0].id == 281||js[0].id == 282||js[0].id == 283||js[0].id == 284||js[0].id == 285||js[0].id == 286||js[0].id == 287)&&js[0].result == 1){
-        document.getElementById("div2").style.left = -1000+'px';
+        //document.getElementById("div2").style.left = -1000+'px';
         document.getElementById("div_tong_suo_id").style.left = 100+'px';
         hasTongsuoOrNot = true;
     }else if(js[0].id == 2000&&js[0].result == 0){      //购买道具
         window.location.href = "ShopRoomScreen.jsp";
     }else if(js[0].id == 2000&&js[0].result == 1){
-        document.getElementById("div2").style.left = -1000+'px';
+        //document.getElementById("div2").style.left = -1000+'px';
         document.getElementById("div_tong_suo_id").style.left = 100+'px';
         hasTongsuoOrNot = true;
     }else if(js[0].id == 3000&&js[0].result == 0){      //购买道具
         window.location.href = "sub_jigsawscreen.jsp?selectIndex_sub="+<%=session.getAttribute("selectIndex_sub__")%>;
     }else if(js[0].id == 3000&&js[0].result == 1){
-        document.getElementById("div2").style.left = -1000+'px';
+        //document.getElementById("div2").style.left = -1000+'px';
         document.getElementById("div_tong_suo_id").style.left = 100+'px';
         hasTongsuoOrNot = true;
     }
