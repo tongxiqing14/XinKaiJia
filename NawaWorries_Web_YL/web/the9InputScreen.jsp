@@ -781,7 +781,7 @@ function transit(js){
     <%--</a>--%>
 </div>
 
-<div id="div_tong_suo_id" style="position: absolute; z-index: 1; left: -1000px; top: 120px;">
+<div id="div_tong_suo_id" style="position: absolute; z-index: 5; left: -1000px; top: 120px;">
     <%--<img id="img_tong_suo_ti_si_id" src="the9Input/9.png">--%>
     <%--<div id="div_div_tong_suo_ti_si1_id" style="position: absolute; left: 80px;top: 100px;">--%>
         <%--<img id="img_tong_suo_ti_si1_id" src="the9Input/8.png">--%>
