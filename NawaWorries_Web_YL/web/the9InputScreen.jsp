@@ -686,10 +686,11 @@ function transit(js){
         hasTongsuoOrNot = true;
     }
 
-    if(hasTongsuoOrNot){
+    if(hasTongsuoOrNot){      //输入童锁订购密码界面
         document.getElementById("img_dinggouerci").src = "the9Input/7.png";
 
-        document.getElementById("div_changpxiangmu").src = "the9Input/8.png";
+        document.getElementById("img_changpxiangmu").src = "the9Input/8.png";
+        document.getElementById("div_changpxiangmu").style.left = 70+'px';
 
         document.getElementById("div_price").style.left = -1000+'px';
         document.getElementById("div_value_name").style.left = -1000+'px';
@@ -738,7 +739,7 @@ function transit(js){
 
 <div id="div_changpxiangmu" style='position:absolute;z-index:4;left: 150px;top: 150px;'>
     <%--<a id="id2" href="">--%>
-    <img id="div_changpxiangmu" src="the9Input/2.png" />
+    <img id="img_changpxiangmu" src="the9Input/2.png" />
     <%--</a>--%>
 </div>
 
