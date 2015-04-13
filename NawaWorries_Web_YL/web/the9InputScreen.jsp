@@ -789,7 +789,7 @@ function transit(js){
     <%--<div id="div_div_tong_suo_ti_si_sr_id" style="position: absolute; left: 80px;top: 140px;">--%>
         <%--<img id="img_tong_suo_ti_si_sr_id" src="the9Input/sr.png">--%>
     <%--</div>--%>
-    <div id="div_password_id" style='font-size:32px; position: absolute; left: 120px;top: 115px;'>
+    <div id="div_password_id" style='font-size:32px; position: absolute; left: 135px;top: 110px;'>
         <span id="div_span_password_id" style="font-weight: bold; position: absolute; top: 0; left: 0;"></span>
     </div>
 </div>
