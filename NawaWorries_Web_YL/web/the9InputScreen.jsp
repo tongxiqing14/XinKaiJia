@@ -690,7 +690,7 @@ function transit(js){
         document.getElementById("img_dinggouerci").src = "the9Input/7.png";
 
         document.getElementById("img_changpxiangmu").src = "the9Input/8.png";
-        document.getElementById("div_changpxiangmu").style.left = 70+'px';
+        document.getElementById("div_changpxiangmu").style.left = 60+'px';
 
         document.getElementById("div_price").style.left = -1000+'px';
         document.getElementById("div_value_name").style.left = -1000+'px';
@@ -778,7 +778,7 @@ function transit(js){
     <%--<div id="div_div_tong_suo_ti_si_sr_id" style="position: absolute; left: 80px;top: 140px;">--%>
         <%--<img id="img_tong_suo_ti_si_sr_id" src="the9Input/sr.png">--%>
     <%--</div>--%>
-    <div id="div_password_id" style='font-size:32px; position: absolute; left: 90px;top: 145px;'>
+    <div id="div_password_id" style='font-size:32px; position: absolute; left: 120px;top: 115px;'>
         <span id="div_span_password_id" style="font-weight: bold; position: absolute; top: 0; left: 0;"></span>
     </div>
 </div>
