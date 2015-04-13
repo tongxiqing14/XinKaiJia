@@ -80,13 +80,13 @@
         var div_mouse_left_x = 75;
         var div_mouse_top_y = 335;
 
-        var refresh_num = <%=refresh_num%>;
+        <%--var refresh_num = <%=refresh_num%>;--%>
 
         function run(){
 
-            if(refresh_num==0){
-                window.location.href = "main.jsp?refresh_num=1";
-            }
+//            if(refresh_num==0){
+//                window.location.href = "main.jsp?refresh_num=1";
+//            }
 
             document.getElementById("img_hero_animation_id").src = "<%=heroimg_array_names[Integer.valueOf(heroIndex)]%>";
             document.getElementById("div_hero_animation_id").style.left = 460+'px';
