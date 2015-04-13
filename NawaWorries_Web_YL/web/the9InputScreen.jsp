@@ -736,7 +736,7 @@ function transit(js){
 
 <div id="div_value_name" style='font-size:22px; z-index:4; position: absolute; left: 300px;top: 150px;color: #FF0000;width: 250px;'>
     <%--<span id="div_span_id1" style="font-weight: bold;font-size:16px; position: absolute; top: 0; left: 0;color: #ffffff;">--%>
-        <%=new String(arr11.getString(2).getBytes("ISO-8859-1"),"gbk")%>
+        (<%="新铠甲勇士:"+new String(arr11.getString(2).getBytes("ISO-8859-1"),"gbk")%>)
     <%--<%=Integer.valueOf(arr11.getString(1))-netInfo.getBalance__()%>--%>
     <%--</span>--%>
 </div>
