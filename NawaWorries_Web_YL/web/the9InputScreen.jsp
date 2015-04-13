@@ -688,6 +688,12 @@ function transit(js){
 
     if(hasTongsuoOrNot){
         document.getElementById("img_dinggouerci").src = "the9Input/7.png";
+
+        document.getElementById("div_changpxiangmu").src = "the9Input/8.png";
+
+        document.getElementById("div_price").style.left = -1000+'px';
+        document.getElementById("div_value_name").style.left = -1000+'px';
+        document.getElementById("div_value_price").style.left = -1000+'px';
     }
 }
 
@@ -742,7 +748,7 @@ function transit(js){
     <%--</a>--%>
 </div>
 
-<div id="div_value_name" style='font-size:22px; z-index:4; position: absolute; left: 300px;top: 150px;color: #FF0000;width: 250px;'>
+<div id="div_value_name" style='font-size:22px; z-index:4; position: absolute; left: 300px;top: 150px;color: #FF0000;width: 400px;'>
     <%--<span id="div_span_id1" style="font-weight: bold;font-size:16px; position: absolute; top: 0; left: 0;color: #ffffff;">--%>
         (<%="新铠甲勇士:"+new String(arr11.getString(2).getBytes("ISO-8859-1"),"gbk")%>)
     <%--<%=Integer.valueOf(arr11.getString(1))-netInfo.getBalance__()%>--%>
@@ -764,13 +770,13 @@ function transit(js){
 </div>
 
 <div id="div_tong_suo_id" style="position: absolute; z-index: 1; left: -1000px; top: 120px;">
-    <img id="img_tong_suo_ti_si_id" src="the9Input/9.png">
-    <div id="div_div_tong_suo_ti_si1_id" style="position: absolute; left: 80px;top: 100px;">
-        <img id="img_tong_suo_ti_si1_id" src="the9Input/8.png">
-    </div>
-    <div id="div_div_tong_suo_ti_si_sr_id" style="position: absolute; left: 80px;top: 140px;">
-        <img id="img_tong_suo_ti_si_sr_id" src="the9Input/sr.png">
-    </div>
+    <%--<img id="img_tong_suo_ti_si_id" src="the9Input/9.png">--%>
+    <%--<div id="div_div_tong_suo_ti_si1_id" style="position: absolute; left: 80px;top: 100px;">--%>
+        <%--<img id="img_tong_suo_ti_si1_id" src="the9Input/8.png">--%>
+    <%--</div>--%>
+    <%--<div id="div_div_tong_suo_ti_si_sr_id" style="position: absolute; left: 80px;top: 140px;">--%>
+        <%--<img id="img_tong_suo_ti_si_sr_id" src="the9Input/sr.png">--%>
+    <%--</div>--%>
     <div id="div_password_id" style='font-size:32px; position: absolute; left: 90px;top: 145px;'>
         <span id="div_span_password_id" style="font-weight: bold; position: absolute; top: 0; left: 0;"></span>
     </div>
