@@ -539,6 +539,10 @@ function transit$(js){
         starInput = "";
         document.getElementById("div_span_password_id").innerText = starInput;
     }
+
+//    if(hasTongsuoOrNot){
+//        document.getElementById("img_dinggouerci").src = "the9Input/7.png";
+//    }
 }
 
 function transit__(js){
@@ -680,6 +684,10 @@ function transit(js){
         document.getElementById("div2").style.left = -1000+'px';
         document.getElementById("div_tong_suo_id").style.left = 100+'px';
         hasTongsuoOrNot = true;
+    }
+
+    if(hasTongsuoOrNot){
+        document.getElementById("img_dinggouerci").src = "the9Input/7.png";
     }
 }
 
