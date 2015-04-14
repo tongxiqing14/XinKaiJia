@@ -168,6 +168,8 @@
         var div_mouse_left_x = -250;
         var div_mouse_top_y = -280;
 
+        var price_ = 0;
+
         //触发onkeypress事件
         document.onkeypress = onKeyPress;
         document.button_up_and_down = 1;
@@ -402,7 +404,8 @@
             }else{
 
                 document.getElementById("div_div_msg_id").innerHTML = "您是否要强化铠甲勇士飞影侠? <br>资费:"+price_json.item1000[1]+"代币";
-                ajax_show_balance1(price_json.item1000[1]);
+                price_  =  price_json.item1000[1];
+                ajax_show_balance1();
                 document.getElementById("msgDiv").style.left=120;
                 document.getElementById("msgDiv").style.top=90;
                 document.getElementById("div_confirm_id").style.left=230+'px';
@@ -466,7 +469,8 @@
                     <%if(heroList!=null&&heroList.get(1).isGot_flag()==1){%>
 
                         document.getElementById("div_div_msg_id").innerHTML = "您是否要强化铠甲勇士刑天侠? <br>资费:"+price_json.item1001[1]+"代币";
-                        ajax_show_balance1(price_json.item1001[1]);
+                        price_  =  price_json.item1001[1];
+                        ajax_show_balance1();
                     <%}%>
                     document.getElementById("msgDiv").style.left=120;
                     document.getElementById("msgDiv").style.top=90;
@@ -553,11 +557,13 @@
                     <%if(heroList!=null&&heroList.get(2).isGot_flag()==1){%>
                         consume_step = 4;         /**更新为充值状态*/
                         document.getElementById("div_div_msg_id").innerHTML = "您是否要强化铠甲勇士金刚侠? <br>资费:"+price_json.item1002[1]+"代币";
-                        ajax_show_balance1(price_json.item1002[1]);
+                        price_  =  price_json.item1002[1];
+                        ajax_show_balance1();
                     <%}else if(heroList!=null&&heroList.get(2).isGot_flag()==2){%>
                         consume_step = 4;         /**更新为充值状态*/
                         document.getElementById("div_div_msg_id").innerHTML = "是否强化铠甲勇士超级金刚侠? <br>资费:"+price_json.item1002[1]+"代币";
-                        ajax_show_balance1(price_json.item1002[1]);
+                        price_  =  price_json.item1002[1];
+                        ajax_show_balance1();
                     <%}%>
                         document.getElementById("msgDiv").style.left=120;
                         document.getElementById("msgDiv").style.top=90;
