@@ -325,7 +325,7 @@ document.sum_left_hero_num = <%=selectHeroList.size()%>;
 
 function run(){
     mouse();
-//    CountDown();
+    CountDown();
 //    timer = setInterval("CountDown()",1000);
 
     <%for(int h = 0; h < enemyTeamList.size(); h++){%>
@@ -494,22 +494,46 @@ function mouse(){
 }
 
 
-var maxtime =2*60; //一个小时，按秒计算，自己调整!
-function CountDown(){
-    if(maxtime>=0){
-        minutes = Math.floor(maxtime/60);
-        seconds = Math.floor(maxtime%60);
-        msg = "倒计时:"+minutes+"分"+seconds+"秒";
-        document.all["timer"].innerHTML=msg;
-        if(maxtime == 5*60)
-            --maxtime;
-        --maxtime;
+//var maxtime =2*60; //一个小时，按秒计算，自己调整!
+//function CountDown(){
+//    if(maxtime>=0){
+//        minutes = Math.floor(maxtime/60);
+//        seconds = Math.floor(maxtime%60);
+//        msg = "倒计时:"+minutes+"分"+seconds+"秒";
+//        document.all["timer"].innerHTML=msg;
+//        if(maxtime == 5*60)
+//            --maxtime;
+//        --maxtime;
 //    }else if(document.browserIsEc1308){
 //        clearInterval(timer);
+//    }else {
+//        clearInterval(timer);
+//        window.location.href="stageMapScreen.jsp";
+//    }
+//}
+
+var maxtime =2*60; //一个小时，按秒计算，自己调整!
+function CountDown(){
+
+    if(maxtime>=0&&!document.gameIsOver){
+
+        var minutes = Math.floor(maxtime/60);
+        var seconds = Math.floor(maxtime%60);
+        var msg = "倒计时:"+minutes+"分"+seconds+"秒";
+
+        document.getElementById("div_timer").innerHTML = msg+"";
+
+        if(maxtime == 5*60)
+            maxtime --;
+        maxtime --;
+    }else if(document.gameIsOver){
+
     }else {
-        clearInterval(timer);
         window.location.href="stageMapScreen.jsp";
     }
+
+    setTimeout("CountDown()",50);
+
 }
 
 var hp_x = new Array(95,95,95,95,95);
@@ -686,6 +710,8 @@ function effect_anger_buffer(){
 <%--<div id="test_div2" style="z-index: 5;font-size:16px;font-weight: bold;position: absolute; top: 105px; left: 80px;color: #ffffff;"></div>--%>
 <div id="test_div3" style="z-index: 5;font-size:16px;font-weight: bold;position: absolute; top: 125px; left: 80px;color: #ffffff;"></div>
 <div id="test_div4" style="z-index: 5;font-size:16px;font-weight: bold;position: absolute; top: 145px; left: 80px;color: #ffffff;"></div>
+
+<div id="div_timer" style="z-index: 5;font-size:16px;font-weight: bold;position: absolute; top: 30px; left: 100px;color: #ffffff;"></div>
 
 <%--<div id="test_div7" style="z-index: 5;font-size:16px;font-weight: bold;position: absolute; top: 165px; left: 80px;color: #ffffff;"></div>--%>
 <%--<div id="test_div8" style="z-index: 5;font-size:16px;font-weight: bold;position: absolute; top: 185px; left: 80px;color: #ffffff;"></div>--%>
