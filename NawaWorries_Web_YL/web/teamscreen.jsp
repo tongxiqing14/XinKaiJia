@@ -160,7 +160,7 @@
                         if (xmlhttp.readyState == 4) {
                             var js = eval(xmlhttp.responseText);
                             if(js[0].id == 0){
-                                var pattern = new RegExp("zte");
+                                var pattern = new RegExp("zte");       // 中兴机顶盒进gamescreen jsp
                                 if (!pattern.exec(navigator.appName+"")){
                                     window.location.href = "teamscreen.jsp?select_Index="+selectIndex+"&select_Index_=-1";
                                 }else{
@@ -176,7 +176,7 @@
             }
 
             if(keyCode==UT.OK||keyCode==ZTE.OK||keyCode==HW.OK){
-                if(consume_step == 400){
+                if(consume_step == 400){    //处理中状态
 
                 }else if(consume_step == 2){
                     if(mouse_index==0){                //control action
@@ -203,11 +203,14 @@
 //                    }else if(selectIndex==2){
 //                        consume_item_index = 181+(select_title_vertical_Index*5+select_title_horizontal_Index);
 //                    }
+//                    mouse();
+
                     if(mouse_index==0){
                         xmlhttp = MakeHttpRequest();
                         xmlhttp.open("Post", top_consume_url+consume_item_index+"&grouptype="+selectIndex, true);
                         xmlhttp.send();
                         consume_step=400;
+
                         xmlhttp.onreadystatechange = function () {
                             if (xmlhttp.readyState == 4) {
                                 var js = eval(xmlhttp.responseText);
@@ -484,7 +487,7 @@
 
         function run(){
 
-//            mouse();
+            mouse();
 
             if("<%=(followingPage == null)%>" == "true"){
                 /**根据选择变化关卡背景*/

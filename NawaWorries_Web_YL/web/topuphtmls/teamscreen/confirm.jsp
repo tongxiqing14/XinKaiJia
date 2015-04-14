@@ -21,6 +21,6 @@
     <img id="img_cancel_id" src="hero/back.png" />
 </div>
 
-<%--<div id="div_mouse_id" style="position: absolute;z-index: 5;left: 250px;top: 280px;">--%>
-    <%--<img id="img_mouse_id" src="stage/mouse.png">--%>
-<%--</div>--%>
+<div id="div_mouse_id" style="position: absolute;z-index: 5;left: 250px;top: 280px;">
+    <img id="img_mouse_id" src="stage/mouse.png">
+</div>

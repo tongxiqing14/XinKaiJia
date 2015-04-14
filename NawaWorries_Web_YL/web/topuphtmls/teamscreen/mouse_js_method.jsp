@@ -26,3 +26,12 @@ function mouse(){
 
     setTimeout("mouse()",150);
 }
+
+<%--function mouse(){--%>
+    <%--document.indexframe_mouse ++;--%>
+    <%--document.indexframe_mouse  = (document.indexframe_mouse+5)%5;--%>
+    <%--document.getElementById("div_mouse_id").style.left = document.div_mouse_left_x-document.indexframe_mouse+'px';--%>
+    <%--document.getElementById("div_mouse_id").style.top = document.div_mouse_top_y+document.indexframe_mouse+'px';--%>
+
+    <%--setTimeout("mouse()",150);--%>
+<%--}--%>
