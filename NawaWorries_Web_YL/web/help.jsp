@@ -22,7 +22,7 @@
             if(keyCode==UT.ZERO||keyCode==ZTE.ZERO||keyCode==HW.ZERO
                     ||keyCode==UT.BACK||keyCode==ZTE.BACK||keyCode==HW.BACK){
                 window.location.href = "index0.jsp";
-            }
+            }         //test hbdx
         }
     </script>
 </head>
