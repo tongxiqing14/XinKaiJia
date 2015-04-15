@@ -309,9 +309,10 @@
                                             if(selectIndex==0){
                                                     if(js[0].fighter_id>=5){
                                                         consume_item_index = -1+js[0].fighter_id;
-                                                        var fighter_id_temp = js[0].fighter_id;
+//                                                        var fighter_id_temp = js[0].fighter_id;
 //                                                        document.getElementById("test_div").innerHTML = js[0].fighter_id;
                                                         <jsp:include page="topuphtmls/taskscreen/is_got__.jsp"></jsp:include>
+
                                                     }else{
                                                         consume_item_index = -1+js[0].fighter_id;
                                                         <jsp:include page="topuphtmls/taskscreen/consume_.jsp"></jsp:include>
@@ -324,6 +325,8 @@
                                                 <jsp:include page="topuphtmls/taskscreen/consume_.jsp"></jsp:include>
                                             }
 
+                                        } else if(js[0].result == 2){
+                                            <jsp:include page="topuphtmls/taskscreen/is_got__2.jsp"></jsp:include>
                                         }
                                     }
                                 }
@@ -585,6 +588,7 @@
 
                 }
             }
+
         }
 
     </script>

@@ -84,8 +84,23 @@ public class IsGotAction extends HttpServlet {
                     out.println("[{id:0,result:0,fighter_id:"+fighterList_got.get(Integer.valueOf(item_index)).getFighter_id()+"}]");
                     out.close();
                 }else {
-                    out.println("[{id:1,result:1,fighter_id:"+fighterList_got.get(Integer.valueOf(item_index)).getFighter_id()+"}]");
-                    out.close();
+                    if(fighterList_got.get(Integer.valueOf(item_index)).getFighter_id()>=5 && fighterList_got.get(Integer.valueOf(item_index)).getFighter_id()<=7){
+                        for (FighterBean fighterBean : fighterList){  //   Fighter_idÎ¨Ò»±êÊ¾
+                            if(fighterBean.getFighter_id() == fighterList_got.get(Integer.valueOf(item_index)).getFighter_id()-(fighterList_got.get(Integer.valueOf(item_index)).getFighter_id()==7?1:3)){
+                                 if(fighterBean.isGot_flag() > 0){
+                                     out.println("[{id:1,result:1,fighter_id:"+fighterList_got.get(Integer.valueOf(item_index)).getFighter_id()+"}]");
+                                     out.close();
+                                 }else {
+                                     out.println("[{id:1,result:2,fighter_id:"+fighterList_got.get(Integer.valueOf(item_index)).getFighter_id()+"}]");
+                                     out.close();
+                                 }
+                            }
+                        }
+                    }else {
+                        out.println("[{id:1,result:1,fighter_id:"+fighterList_got.get(Integer.valueOf(item_index)).getFighter_id()+"}]");
+                        out.close();
+                    }
+
                 }
             }
         }
