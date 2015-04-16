@@ -471,13 +471,13 @@
 
             if(selectIndex == 0){
                 document.getElementById("img_team_id1").src = "team/front.png";
-                document.getElementById("div_command").innerHTML = '<br>请选择一位铠甲勇士参战   <font size="4px" color="#ff2c50">【按5键快速进入游戏】</font>';
+                document.getElementById("div_command").innerHTML = '<br>请选择一位铠甲勇士参战【按5键快速进入游戏】';
             }else if(selectIndex == 1){
                 document.getElementById("img_team_id2").src = "team/middle.png";
-                document.getElementById("div_command").innerHTML = '<br>请选择一到两位随从参战   <font size="4px" color="#ff2c50">【按5键快速进入游戏】</font>';
+                document.getElementById("div_command").innerHTML = '<br>请选择一到两位随从参战【按5键快速进入游戏】';
             }else if(selectIndex == 2){
                 document.getElementById("img_team_id3").src = "team/behind.png";
-                document.getElementById("div_command").innerHTML = '<br>请选择一到两位宠物参战   <font size="4px" color="#ff2c50">【按5键快速进入游戏】</font>';
+                document.getElementById("div_command").innerHTML = '<br>请选择一到两位宠物参战【按5键快速进入游戏】';
             }else if(selectIndex == 3){
                 document.getElementById("img_team_id4").src = "team/fight.png";
                 document.getElementById("div_team_id4").style.left = '462px';
@@ -501,13 +501,13 @@
 
                 if(selectIndex == 0){
                     document.getElementById("img_team_id1").src = "team/front.png";
-                    document.getElementById("div_command").innerHTML = '<br>请选择一位铠甲勇士参战   <font size="4px" color="#ff2c50">【按5键快速进入游戏】</font>';
+                    document.getElementById("div_command").innerHTML = '<br>请选择一位铠甲勇士参战【按5键快速进入游戏】';
                 }else if(selectIndex == 1){
                     document.getElementById("img_team_id2").src = "team/middle.png";
-                    document.getElementById("div_command").innerHTML = '<br>请选择一到两位随从参战   <font size="4px" color="#ff2c50">【按5键快速进入游戏】</font>';
+                    document.getElementById("div_command").innerHTML = '<br>请选择一到两位随从参战【按5键快速进入游戏】';
                 }else if(selectIndex == 2){
                     document.getElementById("img_team_id3").src = "team/behind.png";
-                    document.getElementById("div_command").innerHTML = '<br>请选择一到两位宠物参战   <font size="4px" color="#ff2c50">【按5键快速进入游戏】</font>';
+                    document.getElementById("div_command").innerHTML = '<br>请选择一到两位宠物参战【按5键快速进入游戏】';
                 }else if(selectIndex == 3){
                     document.getElementById("img_team_id4").src = "team/fight.png";
                     document.getElementById("div_team_id4").style.left = '462px';
@@ -658,7 +658,7 @@
         <img id="img_select_id" src="" />
     </div>
 
-    <div id="div_command" style="z-index: 5;font-size:16px;font-weight: bold;position: absolute; top: 60px; left: 80px;color: #fe8464;">
+    <div id="div_command" style="z-index: 5;font-size:16px;font-weight: bold;position: absolute; top: 55px; left: 80px;color: #40fe60;">
 
     </div>
 

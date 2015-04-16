@@ -36,10 +36,10 @@
         hero_index = Integer.valueOf(request.getParameter("task_selectIndex_y"));
     }
 
-    String IsButtonOnOK = application.getInitParameter("IsButtonOnOK");        /**设置初始选中是否为OK按钮*/
+    String IsActiveOnOK = application.getInitParameter("IsActiveOnOK");        /**设置初始选中是否为OK按钮*/
     Integer button_index;
 
-    if(IsButtonOnOK.equals("true")){
+    if(IsActiveOnOK.equals("true")){
         button_index = 0;
     }else {
         button_index = 1;
@@ -128,6 +128,7 @@ var consume_item_index =<%=consume_item_index%>;
 
 var inputString = "";
 var starInput = "";
+var starCount = 0;
 
 var ajax_processing = false;
 
@@ -153,110 +154,136 @@ function onKeyPress(){
 
     if(hasTongsuoOrNot == true && !ajax_processing){
 
-        if(keyCode == ZTE.ZERO || keyCode == HW.ZERO || keyCode == UT.ZERO){
-            inputString += 0;
-            starInput += "*";
-            document.getElementById("div_span_password_id").innerText = starInput;
-        }else if(keyCode == ZTE.ONE || keyCode == HW.ONE || keyCode == UT.ONE){
-            inputString += 1;
-            starInput += "*";
-            document.getElementById("div_span_password_id").innerText = starInput;
-        }else if(keyCode == ZTE.TWO || keyCode == HW.TWO || keyCode == UT.TWO){
-            inputString += 2;
-            starInput += "*";
-            document.getElementById("div_span_password_id").innerText = starInput;
-        }else if(keyCode == ZTE.THREE || keyCode == HW.THREE || keyCode == UT.THREE){
-            inputString += 3;
-            starInput += "*";
-            document.getElementById("div_span_password_id").innerText = starInput;
-        }else if(keyCode == ZTE.FOUR || keyCode == HW.FOUR || keyCode == UT.FOUR){
-            inputString += 4;
-            starInput += "*";
-            document.getElementById("div_span_password_id").innerText = starInput;
-        }else if(keyCode == ZTE.FIVE || keyCode == HW.FIVE || keyCode == UT.FIVE){
-            inputString += 5;
-            starInput += "*";
-            document.getElementById("div_span_password_id").innerText = starInput;
-        }else if(keyCode == ZTE.SIX || keyCode == HW.SIX || keyCode == UT.SIX){
-            inputString += 6;
-            starInput += "*";
-            document.getElementById("div_span_password_id").innerText = starInput;
-        }else if(keyCode == ZTE.SEVEN || keyCode == HW.SEVEN || keyCode == UT.SEVEN){
-            inputString += 7;
-            starInput += "*";
-            document.getElementById("div_span_password_id").innerText = starInput;
-        }else if(keyCode == ZTE.EIGHT || keyCode == HW.EIGHT || keyCode == UT.EIGHT){
-            inputString += 8;
-            starInput += "*";
-            document.getElementById("div_span_password_id").innerText = starInput;
-        }else if(keyCode == ZTE.NINE || keyCode == HW.NINE || keyCode == UT.NINE){
-            inputString += 9;
-            starInput += "*";
-            document.getElementById("div_span_password_id").innerText = starInput;
-        }
 
-        if(keyCode == ZTE.LEFT
-                || keyCode == HW.LEFT
-                || keyCode == UT.LEFT) {
-            selectIndex--;
-        }else if(keyCode == ZTE.RIGHT
-                || keyCode == HW.RIGHT
-                || keyCode == UT.RIGHT){
-            selectIndex++;
-        }
 
-//                    selectIndex = (selectIndex+2)%2;
-
-        if(selectIndex<0){
-            selectIndex=0;
-        }else if(selectIndex>1){
-            selectIndex=1;
-        }
-
-        if(keyCode==UT.OK||keyCode==ZTE.OK||keyCode==HW.OK){
-            if(selectIndex == 0){
-                ajax_processing = true;
-                xmlhttp = MakeHttpRequest();
-                xmlhttp.open("Post", url+"&password="+inputString, true);
-                xmlhttp.send();
-
-                xmlhttp.onreadystatechange = function () {
-                    if (xmlhttp.readyState == 4) {
-                        js = eval(xmlhttp.responseText);
-//                                        document.getElementById("test_div").innerHTML = "js[0].id:"+js[0].id+"---js[0].result:"+js[0].result;
-                        if(js[0].result != 0 && js[0].result != 1){
-                            topupIsOver1 = true;
-                            <jsp:include page="topuphtmls/the9input/finish_topup.jsp"></jsp:include>
-                            document.getElementById("div_div_msg_id").innerHTML = "请去大厅充值";
-                            js[0].result = 0;
-                            setTimeout("transit(js)",1000);
-                        }else if(js[0].result == 0){        /**如果消费成功，弹出消费成功提示*/
-                        topupIsOver1 = true;
-                            <jsp:include page="topuphtmls/the9input/finish_topup.jsp"></jsp:include>
-                            setTimeout("transit$(js)",1000);
-                        }else {
-                            <%--<jsp:include page="topuphtmls/the9input/err_input.jsp"></jsp:include>--%>
-                            inputString = "";
-                            setTimeout("transit$_err_input(js)",1000);
-                        }
-
-                    }
-                }
-                ajax_processing = false;
-            }else if(!topupIsOver1){
-                <jsp:include page="topuphtmls/the9input/finish_topup.jsp"></jsp:include>
-                document.getElementById("div_div_msg_id").innerHTML = "消费失败";
-                setTimeout("transit__(js)",1000);
+        if(starCount < 6){
+            if(keyCode == ZTE.ZERO || keyCode == HW.ZERO || keyCode == UT.ZERO){
+                inputString += 0;
+                starInput += "*";
+                starCount ++;
+                document.getElementById("div_span_password_id").innerText = starInput;
+            }else if(keyCode == ZTE.ONE || keyCode == HW.ONE || keyCode == UT.ONE){
+                inputString += 1;
+                starInput += "*";
+                starCount ++;
+                document.getElementById("div_span_password_id").innerText = starInput;
+            }else if(keyCode == ZTE.TWO || keyCode == HW.TWO || keyCode == UT.TWO){
+                inputString += 2;
+                starInput += "*";
+                starCount ++;
+                document.getElementById("div_span_password_id").innerText = starInput;
+            }else if(keyCode == ZTE.THREE || keyCode == HW.THREE || keyCode == UT.THREE){
+                inputString += 3;
+                starInput += "*";
+                starCount ++;
+                document.getElementById("div_span_password_id").innerText = starInput;
+            }else if(keyCode == ZTE.FOUR || keyCode == HW.FOUR || keyCode == UT.FOUR){
+                inputString += 4;
+                starInput += "*";
+                starCount ++;
+                document.getElementById("div_span_password_id").innerText = starInput;
+            }else if(keyCode == ZTE.FIVE || keyCode == HW.FIVE || keyCode == UT.FIVE){
+                inputString += 5;
+                starInput += "*";
+                starCount ++;
+                document.getElementById("div_span_password_id").innerText = starInput;
+            }else if(keyCode == ZTE.SIX || keyCode == HW.SIX || keyCode == UT.SIX){
+                inputString += 6;
+                starInput += "*";
+                starCount ++;
+                document.getElementById("div_span_password_id").innerText = starInput;
+            }else if(keyCode == ZTE.SEVEN || keyCode == HW.SEVEN || keyCode == UT.SEVEN){
+                inputString += 7;
+                starInput += "*";
+                starCount ++;
+                document.getElementById("div_span_password_id").innerText = starInput;
+            }else if(keyCode == ZTE.EIGHT || keyCode == HW.EIGHT || keyCode == UT.EIGHT){
+                inputString += 8;
+                starInput += "*";
+                starCount ++;
+                document.getElementById("div_span_password_id").innerText = starInput;
+            }else if(keyCode == ZTE.NINE || keyCode == HW.NINE || keyCode == UT.NINE){
+                inputString += 9;
+                starInput += "*";
+                starCount ++;
+                document.getElementById("div_span_password_id").innerText = starInput;
             }
         }
 
-        if(0==selectIndex){
-            document.getElementById("id22").src = "the9Input/10.png";
+
+
+
+
+        if(starCount == 6){
+
+            if(keyCode == ZTE.LEFT
+                    || keyCode == HW.LEFT
+                    || keyCode == UT.LEFT) {
+                selectIndex--;
+            }else if(keyCode == ZTE.RIGHT
+                    || keyCode == HW.RIGHT
+                    || keyCode == UT.RIGHT){
+                selectIndex++;
+            }
+
+//                    selectIndex = (selectIndex+2)%2;
+
+            if(selectIndex<0){
+                selectIndex=0;
+            }else if(selectIndex>1){
+                selectIndex=1;
+            }
+
+            if(keyCode==UT.OK||keyCode==ZTE.OK||keyCode==HW.OK){
+                if(selectIndex == 0){
+                    ajax_processing = true;
+                    xmlhttp = MakeHttpRequest();
+                    xmlhttp.open("Post", url+"&password="+inputString, true);
+                    xmlhttp.send();
+
+                    xmlhttp.onreadystatechange = function () {
+                        if (xmlhttp.readyState == 4) {
+                            js = eval(xmlhttp.responseText);
+    //                                        document.getElementById("test_div").innerHTML = "js[0].id:"+js[0].id+"---js[0].result:"+js[0].result;
+                            if(js[0].result != 0 && js[0].result != 1){
+                                topupIsOver1 = true;
+                                <jsp:include page="topuphtmls/the9input/finish_topup.jsp"></jsp:include>
+                                document.getElementById("div_div_msg_id").innerHTML = "请去大厅充值";
+                                js[0].result = 0;
+                                setTimeout("transit(js)",1000);
+                            }else if(js[0].result == 0){        /**如果消费成功，弹出消费成功提示*/
+                            topupIsOver1 = true;
+                                <jsp:include page="topuphtmls/the9input/finish_topup.jsp"></jsp:include>
+                                setTimeout("transit$(js)",1000);
+                            }else {
+                                <%--<jsp:include page="topuphtmls/the9input/err_input.jsp"></jsp:include>--%>
+                                inputString = "";
+                                document.getElementById("id22").src = "the9Input/12.png";
+                                setTimeout("transit$_err_input(js)",1000);
+                            }
+
+                        }
+                    }
+                    ajax_processing = false;
+                }else if(!topupIsOver1){
+                    <jsp:include page="topuphtmls/the9input/finish_topup.jsp"></jsp:include>
+                    document.getElementById("div_div_msg_id").innerHTML = "消费失败";
+                    setTimeout("transit__(js)",1000);
+                }
+            }
+
+
+            if(0==selectIndex){
+                document.getElementById("id22").src = "the9Input/10.png";
 //        document.getElementById("id33").src = "the9Input/2_2.png";
-        }else{
-            document.getElementById("id22").src = "the9Input/11.png";
+            }else{
+                document.getElementById("id22").src = "the9Input/11.png";
 //        document.getElementById("id33").src = "the9Input/3_2.png";
+            }
+
+            starCount == 0;
         }
+
 
     }else if(!topupIsOver){
         if(keyCode == ZTE.LEFT

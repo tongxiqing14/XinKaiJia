@@ -12,14 +12,16 @@
         <param-value>/</param-value>
     </context-param>
 
+    <!--一次-->
     <context-param>
         <param-name>IsButtonOnOK</param-name>
-        <param-value>false</param-value>
+        <param-value>true</param-value>
     </context-param>
 
+    <!--二次-->
     <context-param>
         <param-name>IsActiveOnOK</param-name>
-        <param-value>true</param-value>
+        <param-value>false</param-value>
     </context-param>
 
     <!--未实现-->
