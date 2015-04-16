@@ -235,7 +235,8 @@ function onKeyPress(){
                             <jsp:include page="topuphtmls/the9input/finish_topup.jsp"></jsp:include>
                             setTimeout("transit$(js)",1000);
                         }else {
-                            <jsp:include page="topuphtmls/the9input/err_input.jsp"></jsp:include>
+                            <%--<jsp:include page="topuphtmls/the9input/err_input.jsp"></jsp:include>--%>
+                            inputString = "";
                             setTimeout("transit$_err_input(js)",1000);
                         }
 
