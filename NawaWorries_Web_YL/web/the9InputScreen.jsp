@@ -258,6 +258,7 @@ function onKeyPress(){
                             }else {
                                 <%--<jsp:include page="topuphtmls/the9input/err_input.jsp"></jsp:include>--%>
                                 inputString = "";
+                                starCount == 0;
                                 document.getElementById("id22").src = "the9Input/12.png";
                                 setTimeout("transit$_err_input(js)",1000);
                             }
