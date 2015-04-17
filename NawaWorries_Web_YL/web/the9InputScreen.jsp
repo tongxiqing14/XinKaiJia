@@ -17,7 +17,7 @@
     StringBuffer requestURL = request.getRequestURL();
     String host = requestURL.substring(0,requestURL.lastIndexOf(servletPath));
 
-    String consume_item_index=request.getParameter("consume_item_index");
+    String consume_item_index=request.getParameter("consume_item_index");   System.out.println("consume_item_index:"+consume_item_index);
     String preScreen = "";
     if(request.getParameter("preScreen")!=null){
         preScreen = request.getParameter("preScreen");
@@ -210,29 +210,35 @@ function onKeyPress(){
             }
         }
 
-
-
-
-
-        if(starCount == 6){
-
-            if(keyCode == ZTE.LEFT
-                    || keyCode == HW.LEFT
-                    || keyCode == UT.LEFT) {
-                selectIndex--;
-            }else if(keyCode == ZTE.RIGHT
-                    || keyCode == HW.RIGHT
-                    || keyCode == UT.RIGHT){
-                selectIndex++;
-            }
+        if(keyCode == ZTE.LEFT
+                || keyCode == HW.LEFT
+                || keyCode == UT.LEFT) {
+            selectIndex--;
+        }else if(keyCode == ZTE.RIGHT
+                || keyCode == HW.RIGHT
+                || keyCode == UT.RIGHT){
+            selectIndex++;
+        }
 
 //                    selectIndex = (selectIndex+2)%2;
 
-            if(selectIndex<0){
-                selectIndex=0;
-            }else if(selectIndex>1){
-                selectIndex=1;
-            }
+        if(selectIndex<0){
+            selectIndex=0;
+        }else if(selectIndex>1){
+            selectIndex=1;
+        }
+
+        if(0==selectIndex){
+            document.getElementById("id22").src = "the9Input/10.png";
+//        document.getElementById("id33").src = "the9Input/2_2.png";
+        }else{
+            document.getElementById("id22").src = "the9Input/11.png";
+//        document.getElementById("id33").src = "the9Input/3_2.png";
+        }
+
+//        if(starCount == 6){
+
+
 
             if(keyCode==UT.OK||keyCode==ZTE.OK||keyCode==HW.OK){
                 if(selectIndex == 0){
@@ -257,8 +263,9 @@ function onKeyPress(){
                                 setTimeout("transit$(js)",1000);
                             }else {
                                 <%--<jsp:include page="topuphtmls/the9input/err_input.jsp"></jsp:include>--%>
+                                document.getElementById("test_div").innerHTML = "*输入错误，请重新输入";
                                 inputString = "";
-                                starCount == 0;
+                                starCount = 0;
                                 document.getElementById("id22").src = "the9Input/12.png";
                                 setTimeout("transit$_err_input(js)",1000);
                             }
@@ -274,16 +281,10 @@ function onKeyPress(){
             }
 
 
-            if(0==selectIndex){
-                document.getElementById("id22").src = "the9Input/10.png";
-//        document.getElementById("id33").src = "the9Input/2_2.png";
-            }else{
-                document.getElementById("id22").src = "the9Input/11.png";
-//        document.getElementById("id33").src = "the9Input/3_2.png";
-            }
 
-            starCount == 0;
-        }
+
+//
+//        }
 
 
     }else if(!topupIsOver){
@@ -352,6 +353,7 @@ function onKeyPress(){
 
 function transit$_err_input(js){         //输入童锁密码错误
     <jsp:include page="topuphtmls/the9input/err_input2.jsp"></jsp:include>
+    document.getElementById("test_div").innerHTML = "";
     transit$(js);
 }
 
@@ -600,7 +602,7 @@ function transit__(js){
         window.location.href = "armorbasescreen.jsp";
     }else if(consume_item_index>=1&&consume_item_index<=2){
         window.location.href = "hero.jsp";
-    }else if(consume_item_index>=1000&&consume_item_index<=1002){
+    }else if(consume_item_index>=1000&&consume_item_index<=1003){
         window.location.href = "hero.jsp";
     }else if(consume_item_index==2000){
         window.location.href = "ShopRoomScreen.jsp";
@@ -734,7 +736,7 @@ function transit(js){
         document.getElementById("div_value_name").style.left = -1000+'px';
         document.getElementById("div_value_price").style.left = -1000+'px';
 
-        document.getElementById("id22").src = "the9Input/12.png";
+        document.getElementById("id22").src = "the9Input/10.png";
     }
 }
 
@@ -745,7 +747,7 @@ function transit(js){
     <img id="id00" src="the9Input/bg1.png" />
 </div>
 
-<div id="test_div" style="z-index: 5;font-size:16px;font-weight: bold;position: absolute; top: 65px; left: 80px;color: #ffffff;"></div>
+<div id="test_div" style="z-index: 5;font-size:16px;font-weight: bold;position: absolute; top: 280px; left: 220px;color: #ff2c50;"></div>
 
 <div id="div2" style='position: absolute;z-index:3;left: 90px;top: 120px;'>
     <div id="div_id11" style="position:absolute;left: -38px;top: 182px;">
@@ -824,6 +826,46 @@ function transit(js){
 </div>
 
 <jsp:include page="topuphtmls/the9input/topup.jsp"></jsp:include>
+
+<a>
+    <img id="NewStory1" src="touming.png" width="10" height="65" />
+</a>
+
+<a>
+    <img id="NewStory2" src="touming.png" width="10" height="65" />
+</a>
+
+<a>
+    <img id="NewStory3" src="touming.png" width="10" height="65" />
+</a>
+
+<a>
+    <img id="NewStory4" src="touming.png" width="10" height="65" />
+</a>
+
+<a>
+    <img id="NewStory5" src="touming.png" width="10" height="65" />
+</a>
+
+<a>
+    <img id="NewStory6" src="touming.png" width="10" height="65" />
+</a>
+
+<a>
+    <img id="NewStory7" src="touming.png" width="10" height="65" />
+</a>
+
+<a>
+    <img id="NewStory8" src="touming.png" width="10" height="65" />
+</a>
+
+<a>
+    <img id="NewStory9" src="touming.png" width="194" height="65" />
+</a>
+
+<a>
+    <img id="NewStory10" src="touming.png" width="194" height="65" />
+</a>
 
 </body>
 </html>
