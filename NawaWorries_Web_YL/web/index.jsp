@@ -51,7 +51,8 @@
 
         NetHander netHander = new NetHander(ServerURL, UserID, ProductID, adAccount, UserToken);
 
-        if(netHander.getGameData(-1)==null||!netHander.getGameData(-1).equals("init201410082111")){
+//        if(netHander.getGameData(-1)==null||!netHander.getGameData(-1).equals("init150428")){
+        if(application.getAttribute("init"+UserID)==null || !application.getAttribute("init"+UserID).equals("true")){
 
             session.setAttribute("_FighterData", JsonToBean.jsonTobean(HeroDataOp.initialFighterData()));
             session.setAttribute("_HeroData", JsonToBean.jsonTobean1(HeroDataOp.initialHeroData()));
@@ -64,7 +65,8 @@
             session.setAttribute("_jigsawinfo", JigSawInfoOp.initialJigSawInfo());
 //            session.setAttribute("stage_map_stage_btn_index", 0);
 
-            netHander.saveGameData("init201410082111", -1);
+//            netHander.saveGameData("init150428", -1);
+            application.setAttribute("init"+UserID,"true");
             netHander.saveGameData(HeroDataOp.initialFighterData(), 1);    //   initialHero1Data   1
             netHander.saveGameData(HeroDataOp.initialHeroData(), 2);
             netHander.saveGameData(HeroDataOp.initialMonsterData(), 3);    //   initialHero1Data   1
